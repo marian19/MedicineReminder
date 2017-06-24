@@ -20,10 +20,10 @@ public class Nurse: NSManagedObject {
             let fetchRequest : NSFetchRequest<Nurse> = Nurse.fetchRequest()
             
             if password.isBlank {
-                fetchRequest.predicate = NSPredicate(format: "email == %@", email)
+                fetchRequest.predicate = NSPredicate(format: "email LIKE[cd] %@", email)
 
             }else{
-                fetchRequest.predicate = NSPredicate(format: "email == %@ AND password == %@", email,password)
+                fetchRequest.predicate = NSPredicate(format: "email LIKE[cd] %@ AND password == %@", email,password)
 
             }
             let fetchedResults = try managedObjectContext.fetch(fetchRequest)

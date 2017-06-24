@@ -9,7 +9,10 @@ target 'MedicineReminder' do
     pod "TextFieldEffects"
     pod 'MBProgressHUD'
     pod 'IQKeyboardManagerSwift'
-    
+    pod 'DZNEmptyDataSet'
+    pod 'ActionSheetPicker-3.0'
+    pod 'DLRadioButton'
+
 
     target 'MedicineReminderTests' do
         inherit! :search_paths

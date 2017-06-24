@@ -10,7 +10,7 @@ import Foundation
 
 protocol SignupPresenterProtocol : class{
     
-    func Signup(email: String, password: String)
+    func signup(email: String, password: String)
 }
 
 protocol SignupViewProtocol : class{

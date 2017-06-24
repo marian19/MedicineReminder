@@ -1,9 +1,9 @@
 //
 //  Patient+CoreDataProperties.swift
-//  MedicineReminder
+//  
 //
-//  Created by Marian on 6/23/17.
-//  Copyright © 2017 Marian. All rights reserved.
+//  Created by Marian on 6/24/17.
+//
 //
 
 import Foundation
@@ -19,8 +19,8 @@ extension Patient {
     @NSManaged public var email: String?
     @NSManaged public var name: String?
     @NSManaged public var phone: String?
-    @NSManaged public var nurse: Nurse?
     @NSManaged public var medicines: NSSet?
+    @NSManaged public var nurse: Nurse?
 
 }
 

@@ -7,181 +7,308 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631409440E7D051B2306D1B29872A06 /* IQToolbar.swift */; };
-		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A275CDE0D7CAFEABDC27B5BB0AA1B6 /* MBProgressHUD-dummy.m */; };
-		0C97C02CD6531D0F752BBB66E98FDA90 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1C2DAFB4BFF519A6281F649CC9FCD /* TextFieldEffects-dummy.m */; };
+		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1366E07D4D6509006377E5C0719DFC4 /* IQToolbar.swift */; };
+		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62117E613CEBBDFB73ED25776E9D4726 /* MBProgressHUD-dummy.m */; };
+		0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 703A89E6D109FB06CF2AAE755FE44542 /* SWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EFC0E4B3464CBC46DB6EC61679829DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */; };
+		0F911518B639EDDB31521A96456C50CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
 		1215629D558162CE728B27386DA02D1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
+		159896997AFE04C4FDD9926CC2B4DF25 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B023A2148B1670171E01D556FDB7523F /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C2CE39AA4DDFBCEA2FF2BB1AF346F75 /* ActionSheetDistancePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18A1B3391854DE961EBB997617888B51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335BED886FF16E801BF3332AA496E57 /* IQTitleBarButtonItem.swift */; };
-		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404709E964BE85B73CB5290627AC1DC2 /* IQUIScrollView+Additions.swift */; };
+		1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F092754033EC5E5D8A80286FF722D5D /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B16120DBC47EF3C82516EB381D29D1 /* IQTitleBarButtonItem.swift */; };
+		20F0ADEC8063B461B3957C77C4AA6429 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB357C369D08AC6D3283C6D7D247582 /* AkiraTextField.swift */; };
+		21685978373609ABBDB21E9F8E013308 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
+		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6694763853DDAC78BB6D640BC7E4A74 /* IQUIScrollView+Additions.swift */; };
+		23AE55B3EEA4D4D7D67A5B006ED7F7B2 /* Pods-MedicineReminder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41575722163372F49A2C3CED75F517F1 /* Pods-MedicineReminder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CB660AFB1459C24FC9365F8F25B387 /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		25D4D06E22C7787FDB93BDD53C2E9EB7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */; };
-		26313543822DAFC695444F79B7B1EBCE /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4632A9F837E3A052BAA870D5BD34775 /* MinoruTextField.swift */; };
-		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9183F822AC0DCE4EE46B8CB5898F9A6D /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBADCCF2F07EF849F176B535623F09E6 /* IQKeyboardManager.bundle */; };
-		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0F76FC5FDA766B6A4F2C3ED6F0A1C /* IQUIView+Hierarchy.swift */; };
-		3DE2695BC44C8993742421491232E3C3 /* Pods-MedicineReminder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41575722163372F49A2C3CED75F517F1 /* Pods-MedicineReminder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680FB2A9AAFE79796C23A20390CEF45 /* AbstractActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7576587E1E2324222B8F621234D41762 /* AbstractActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A418D7C2698A20E01F7A180B71B564 /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C34B43AFA7A1D88AB188801C76E08C /* ActionSheetPicker-3.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D24953D9507640E0C4EA1F64354910 /* ActionSheetPicker-3.0-dummy.m */; };
+		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 870553C0E84D40C950C0DC6A289F13FF /* IQKeyboardManager.bundle */; };
+		2B37A32165009CA418728522604160B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
+		2C96AD2998026979EC383A4C654AE2EC /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DAA2EED68850B7B25909AC42C9B1F /* HoshiTextField.swift */; };
+		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917226D65FC65A11C0609DDEBC7ACA9 /* IQUIView+Hierarchy.swift */; };
+		30997A0DDF76DE68C1505B7E8DA1324E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */; };
+		3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 894590635504C02D4BDFE71130576759 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		414F32246DE2848E407A4153CC82BC5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E471EA583621735103730CCD8C08B7E /* IQKeyboardManager.swift */; };
-		4C9C00D30847AF5EB2C5F2EC5E4A74E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		4CD315769CEA2A79C5C93B7E27F87D3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636F0F494B45ED1937B67C9F529CFF7E /* IQUIWindow+Hierarchy.swift */; };
-		6898A22B9E545C6C8511AC87CA334441 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E002C7B6257808655AC6923B4674C /* HoshiTextField.swift */; };
-		73A4AB15E9B28725AA6BEDAFF5783062 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F83A9BEABFDD3F1653FF0EE66F6A3B8 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B71D04FB0C407424595B1965DC00B6D6 /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4380B1A97B3C14F0F9564CBCA36EB1E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
+		4568C6CC7F78399CA1312B20E26EA8FE /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B34F0E152DBD222AC7CF61C202714 /* UIScrollView+EmptyDataSet.m */; };
+		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B972A0A599FFEBD80DEB5E6833B1B82 /* IQKeyboardManager.swift */; };
+		4C144355E41C99902528AAD3CF069680 /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E714520568D1FA1061163CE28C3868D /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A79F43BF3D900FD1E8186E93841D280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */; };
+		5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77592DD3038BD823199582F28CCA8DAE /* DLRadioButton-dummy.m */; };
+		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C128A4F15C417AABB58F8EE7E60A283 /* IQUIWindow+Hierarchy.swift */; };
+		6C16BD3BCB1B65194E7CEA5CF15AD446 /* ActionSheetMultipleStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D03A4174E9513D3255D202B4B45F0B /* ActionSheetMultipleStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75D0A461B8CF202F41C55CA1E732124C /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DC7AC4881411492AF61D758100B476 /* DZNEmptyDataSet-dummy.m */; };
+		7637BA9264CCB54EEA89D2B71B0EFC02 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7B33755F83DB038BD1AAC205FECCC /* JiroTextField.swift */; };
 		7728B533F170435A03DABBC06640A42C /* Pods-MedicineReminderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69618CA537692AE972D99D6026A0C8ED /* Pods-MedicineReminderTests-dummy.m */; };
 		7BB58A9068BFA4702F94DBA4AAA34438 /* Pods-MedicineReminderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 408270734F4C1CCC0EC038CA21F5CB8B /* Pods-MedicineReminderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3CB7EB819BECD7856C7FECCAEDE93A /* ActionSheetLocalePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBC4C9DF46C3A894BE9613602B0E1EF /* ActionSheetPicker-3.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83B16610AD717683AF6F9189F3BB73E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
-		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82077CE5458CF7C76B06BD2038A889AE /* IQUIViewController+Additions.swift */; };
-		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B055733C7AFEAB63C12A3C5944AE38FE /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84116DD709725E60919846D7B1AF714B /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 793DCB67222740E16B782B80D51817A2 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8511E9645F5C2B18746B4B4B29284451 /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 933CD8E72ABEE97CFD889C97DA6FA6FE /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC635259B0AD811FD85662A897345DC /* IQUIViewController+Additions.swift */; };
+		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 620C32119BA0E652657C9D56F95307DB /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87E651EA316CCCCE5BF5017EFD5DB880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8EF2301073B01E30612B5B1BD94446 /* CoreGraphics.framework */; };
-		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DCF3BAB687A54499E4DBB16FB88DAF /* IQTextView.swift */; };
-		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BFCAEC99D013530A399A24CE3E7551 /* MBProgressHUD.m */; };
-		953D3174C674FFDA9F39F5902620C7EF /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0324833D271B6E883DC849F0494908 /* KaedeTextField.swift */; };
+		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A311348A575D139DE61DA1CB17A77760 /* IQTextView.swift */; };
+		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 928F41ED54F28D18E2B3C241B900C6CA /* MBProgressHUD.m */; };
+		8C647407B8BB2453C373CDEE5222A29F /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57932F149D009795BEBA7CAD2498C944 /* KaedeTextField.swift */; };
+		8F2D8EC348F59816CFDEA65538E3E532 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D036856425A0A3AB2D1798BEA3844B4 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E90688951CDA6AB61A5DFCB3F4D2FEBF /* ActionSheetCustomPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		921A1CB0E85A7A48033FE5A4EB8D7708 /* Pods-MedicineReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8337153043D2521D0CEB4871824954BB /* Pods-MedicineReminder-dummy.m */; };
+		96ED46F1185A99033F7D50836041A410 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E98683C7C56A0591770D1CDCBAAE1A1B /* TextFieldEffects-dummy.m */; };
 		98DF470CA8F6DD132AFAC1398FCD579C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8EF2301073B01E30612B5B1BD94446 /* CoreGraphics.framework */; };
-		9B22E0C0B8AE69B27520786671F57B82 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07F1693468617C6B06AF24D6F58DD1E /* IsaoTextField.swift */; };
-		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879F6F1FD03353066D6823E8B02CB9B /* IQKeyboardManagerConstants.swift */; };
-		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947EDA86066199E1F481BF63200867C9 /* IQUIView+IQKeyboardToolbar.swift */; };
-		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD0BE52FB6718B1BAB1EACC7758C8C4 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABC7A68CD75002ADB55E733BF21C3674 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998451461C100260F4C64801782053F /* JiroTextField.swift */; };
-		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AF99DD4D9364C2638E9BBEB1B9CD6E /* IQKeyboardManagerSwift-dummy.m */; };
-		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23F6A34AB4C73CFED7FE86BAA3502A4 /* IQUITextFieldView+Additions.swift */; };
+		9B2B8491E6B1B8EA1C9ACD37341C726B /* ActionSheetPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B06FB3FBA5C3BE65FB9A2D9902470B /* ActionSheetPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B867960879FDDD089A9E41F027E13B9 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F05B12A8526BBEB55E990D0957523E11 /* AbstractActionSheetPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4214C9EC0C03B3319DEA8FAAD79B6 /* IQKeyboardManagerConstants.swift */; };
+		9BC276383ED044BB0926AFDFD73F928E /* ActionSheetDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5257F77BFDE91251D8E64078C6139A /* ActionSheetDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277873935B9204CAA4856710EA942417 /* IQUIView+IQKeyboardToolbar.swift */; };
+		9F5F331FE1FCE98CADFDD30166D6EE22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */; };
+		A4EDEA0ACF870CCF3FA13CA203B2AAED /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7B6A7DEDB465EDB84274AD5D67A631 /* MinoruTextField.swift */; };
+		A59125195D239C0FCDBCCD587FCAAE65 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEAEACDD440C027E9C8F17033AC85F1 /* IsaoTextField.swift */; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 853234A8449A044057DEB45AF54BD9BB /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE84E0341C26A9B5C8E1501C8E8AAC8F /* ActionSheetCustomPickerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E5BA998DBD6CDF7818CE3E486B510F /* ActionSheetCustomPickerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B84ED435B715404EA7BDF2339615F615 /* IQKeyboardManagerSwift-dummy.m */; };
+		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384C976845B4BD6C23DB89F69FEAF71 /* IQUITextFieldView+Additions.swift */; };
 		B8CBCCF8CD59D02EDB78ECBF3C034BB2 /* Pods-MedicineReminderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2493F85BF1F8B9778AD43AEF94E8CA38 /* Pods-MedicineReminderUITests-dummy.m */; };
-		C271F7B7BCE0317C29C898048EE4A138 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2216BC2D169C71D9EAC13F445B8EFFA /* YoshikoTextField.swift */; };
-		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7139E396896EF51E76BDA6460F23B /* IQKeyboardReturnKeyHandler.swift */; };
+		BDBFA441010D34FB51DC32F28314AD8D /* ActionSheetStringPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = F10E57D3D97F7FDE012BD88DDEF70728 /* ActionSheetStringPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675144F870225976BF0381DE54240A2 /* IQKeyboardReturnKeyHandler.swift */; };
+		C6CB72E223B27A0C2B06910EC0FADF67 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4519F267018F01F834417C142573EDBB /* ActionSheetStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		C828BDD630E2F421C8E15B63534D0307 /* Pods-MedicineReminderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E20FE75B2EEFBB19D477B09799869D97 /* Pods-MedicineReminderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C998BC9FCF7A2ADC12F832EFE3AE6C57 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A050039AEC8B8B6DB2597E06B4DF36 /* TextFieldEffects.swift */; };
-		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47172827C5DBAFDB5FC5E5BF8F0DE411 /* IQPreviousNextView.swift */; };
-		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8193D89D015193982EF26E332EFF6B /* IQNSArray+Sort.swift */; };
-		CD663C11144168BACC4CE2455DE82895 /* Pods-MedicineReminder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8337153043D2521D0CEB4871824954BB /* Pods-MedicineReminder-dummy.m */; };
+		CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AAB7A7923AE7419BA3851DA0FAC5175 /* DistancePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC9DD0522633B92053A59356670241 /* IQPreviousNextView.swift */; };
+		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEFF1BF0AB17D7CFB156C3F60B8FEB1 /* IQNSArray+Sort.swift */; };
 		DA3FBCF3B21EB18151C3BC2645107E0D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */; };
-		DDF8C8F1114F1920C1858EA2D087C5E5 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA27DA216CB65FC9592DD2C9B7C61E /* YokoTextField.swift */; };
-		E938DBFCEE4D3DCF21A62C4200F8EA7A /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AE05D8439D31030DEAB6F9EF32A090 /* AkiraTextField.swift */; };
-		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B121855913CFA4E7D6569095EC9EE82 /* IQKeyboardManagerConstantsInternal.swift */; };
-		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7210B30A7883BE20C4C252F9BC433AF8 /* IQBarButtonItem.swift */; };
-		FF0475C5015EA0B6C285941D5CA59CAB /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5FE09287874A257464185489C458A9 /* MadokaTextField.swift */; };
+		DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D590F461F3BAAD694CC72E4E53683513 /* ActionSheetMultipleStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E049CE807DA7A012BA222DE64920C3D1 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = AC79641C3F4BC97EEE4F22230AE09982 /* SWActionSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E43227369C604FE2C9645AD78949EB85 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6C301EB8F414DF5E9FC030DC2CE97 /* YoshikoTextField.swift */; };
+		E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F81AEA07B6821FEF5075CBD9543993 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733A17E307FAA4059DD909E443C87B66 /* IQKeyboardManagerConstantsInternal.swift */; };
+		EE07477EB879784372EADAEC105458EE /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF464E974D70E91C08280E0DA1B38C82 /* YokoTextField.swift */; };
+		EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 54459E250F8BD8C460888BF24EED6081 /* DLRadioButton.m */; };
+		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008DE6672F57DB6FD1F2D782EEA6D936 /* IQBarButtonItem.swift */; };
+		F80B057DEB991C088E10635EE5CA8CAD /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F625A181D047DDFAAD23EAE40AF551 /* TextFieldEffects.swift */; };
+		FE1DBFA6F739F189B7D9B84C8B33B41A /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6DDD8EA2FE9B1D03BB710468FE5DD4 /* MadokaTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		311064482131FF2A193CCF525BD834E4 /* PBXContainerItemProxy */ = {
+		27742FF4CF7955CB35B9561B6E6C09C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = F6A77E2753C279F67F70C5C21D6FAE15;
+			remoteInfo = DLRadioButton;
 		};
-		CB25760FF0DF8C999BD27EEBB29C05DA /* PBXContainerItemProxy */ = {
+		44680B7C43F721BBC593B9185EDE08B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B92B099B8C97B35101B8DC44597A077D;
-			remoteInfo = TextFieldEffects;
+			remoteGlobalIDString = D386C75EFD4F03725E4EFB866B600B9A;
+			remoteInfo = DZNEmptyDataSet;
 		};
-		E27D4D2EF138CCAB2B6B7534EB752C66 /* PBXContainerItemProxy */ = {
+		4620EE88AF748EC843C666752AFAA657 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C235F77E101E742652CCF98FFDFA5182;
 			remoteInfo = IQKeyboardManagerSwift;
 		};
+		48625ACACF97A4224433BBAEB6FE311D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
+			remoteInfo = MBProgressHUD;
+		};
+		5CBCCF4314D11772CB77EA5B3D36072F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 965699190112DDBD9B7864D091660DBC;
+			remoteInfo = "ActionSheetPicker-3.0";
+		};
+		75A5D9599F9646919F2DC3DDE8DB3F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62370B7B0334A5E9DDEA712F480C8097;
+			remoteInfo = TextFieldEffects;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		008DE6672F57DB6FD1F2D782EEA6D936 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		014164A86052860CE44E35D1ECD90F9A /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A878B6379169B6410590AFE1316753 /* Pods-MedicineReminder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedicineReminder-resources.sh"; sourceTree = "<group>"; };
 		01DC5D2F4FD098434E62B50073E21A26 /* Pods-MedicineReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedicineReminder.debug.xcconfig"; sourceTree = "<group>"; };
-		0A8193D89D015193982EF26E332EFF6B /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		02A418D7C2698A20E01F7A180B71B564 /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		0B972A0A599FFEBD80DEB5E6833B1B82 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		0BEAEACDD440C027E9C8F17033AC85F1 /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
 		0D8EF2301073B01E30612B5B1BD94446 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		0F29E6FB5F1D14853870C1A32ED1B859 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
 		0FAC39478CF0BE44AC77DFBEF380EBF1 /* Pods-MedicineReminder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedicineReminder-acknowledgements.markdown"; sourceTree = "<group>"; };
 		103482A0F3E89111E1353ED54FA788A1 /* Pods-MedicineReminderUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedicineReminderUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		19A275CDE0D7CAFEABDC27B5BB0AA1B6 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		13607B3571737C04F503291F54581EB6 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		14AB7AF6ABCB884912B6A475B3E76B39 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DC7AC4881411492AF61D758100B476 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		16681C76CD2656902BC321EEB3967CE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1759F29CDCA44CCF242FB34EB916ADB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5FBFC58D096E3E2AC8458C009D5B76 /* ActionSheetPicker-3.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "ActionSheetPicker-3.0.modulemap"; sourceTree = "<group>"; };
 		1AE8646856285E0F7120620519600FE4 /* Pods-MedicineReminderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedicineReminderTests.release.xcconfig"; sourceTree = "<group>"; };
-		2329B5911E09DC69FDCE530441D2F330 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		20FF9E2F58D017A1B52A385546BF62FD /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
 		2493F85BF1F8B9778AD43AEF94E8CA38 /* Pods-MedicineReminderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedicineReminderUITests-dummy.m"; sourceTree = "<group>"; };
-		283CF5CBF2060E91461E481EB712658D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2998451461C100260F4C64801782053F /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
-		2DE1BA1DE00C7A91D3B5D8DE292E76B1 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		277873935B9204CAA4856710EA942417 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		27C02A406C2DE6EEC505BBADB89D98F5 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		2AAB7A7923AE7419BA3851DA0FAC5175 /* DistancePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = Pickers/DistancePickerView.h; sourceTree = "<group>"; };
+		2C128A4F15C417AABB58F8EE7E60A283 /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
 		2DEA5DABAA504BA8F1D30332B9881101 /* Pods-MedicineReminderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MedicineReminderTests.modulemap"; sourceTree = "<group>"; };
+		2E714520568D1FA1061163CE28C3868D /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		2F7B6A7DEDB465EDB84274AD5D67A631 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
 		322A67C20023C51CC9AEC7913BB4CEC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		341310E43A5ABBD4764934569B50ABA4 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
-		350E002C7B6257808655AC6923B4674C /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
-		381FBE0B6819EAA6DC2D35D558686012 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B121855913CFA4E7D6569095EC9EE82 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
-		3E5FE09287874A257464185489C458A9 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
-		3F3F9E1CA5653F23C3D6ED6FD0E6CE80 /* Pods_MedicineReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedicineReminder.framework; path = "Pods-MedicineReminder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		404709E964BE85B73CB5290627AC1DC2 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		3384C976845B4BD6C23DB89F69FEAF71 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		33F81AEA07B6821FEF5075CBD9543993 /* ActionSheetCustomPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetCustomPicker.m; path = Pickers/ActionSheetCustomPicker.m; sourceTree = "<group>"; };
+		35C271B193D8C671DBFB9DAE376C19E9 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		3AC635259B0AD811FD85662A897345DC /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		3C2CE39AA4DDFBCEA2FF2BB1AF346F75 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = Pickers/ActionSheetDistancePicker.h; sourceTree = "<group>"; };
+		3D036856425A0A3AB2D1798BEA3844B4 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
 		408270734F4C1CCC0EC038CA21F5CB8B /* Pods-MedicineReminderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedicineReminderTests-umbrella.h"; sourceTree = "<group>"; };
+		412C4C7F87235ED25DC700EA8F72F7E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41575722163372F49A2C3CED75F517F1 /* Pods-MedicineReminder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedicineReminder-umbrella.h"; sourceTree = "<group>"; };
 		419D4224618E4BBA4911F4391D381B7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43998DBD993D24BCB55F3B3ABD8F890B /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47172827C5DBAFDB5FC5E5BF8F0DE411 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
-		4D2531D3527BC1CC5F8DBFF432D180AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4519F267018F01F834417C142573EDBB /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = Pickers/ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		471E40244A51AC42347649AC331CAC59 /* Pods_MedicineReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedicineReminder.framework; path = "Pods-MedicineReminder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C2F37EE45EF3D1C837FEA06D434B95 /* ActionSheetPicker-3.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ActionSheetPicker-3.0.xcconfig"; sourceTree = "<group>"; };
 		4F77F35BC7CE1AE8B8737174BB290C75 /* Pods-MedicineReminderTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedicineReminderTests-frameworks.sh"; sourceTree = "<group>"; };
 		51498E299B7CB17BCC8B54F93C150FAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		52A0F76FC5FDA766B6A4F2C3ED6F0A1C /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		51E5BA998DBD6CDF7818CE3E486B510F /* ActionSheetCustomPickerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPickerDelegate.h; path = Pickers/ActionSheetCustomPickerDelegate.h; sourceTree = "<group>"; };
+		530092C732F885BCE4888E9429A53629 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		531A0E11EB4A5BF3628C0650752D2D60 /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ActionSheetPicker_3_0.framework; path = "ActionSheetPicker-3.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54459E250F8BD8C460888BF24EED6081 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
 		55843E0B465B815B94F385DF2627B22E /* Pods-MedicineReminderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedicineReminderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		57932F149D009795BEBA7CAD2498C944 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		59759257FDF92A983D4AFBADCED430C9 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
 		5A7F79E6F60D2C4A3C17C05E16B27028 /* Pods-MedicineReminderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedicineReminderTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D71B5540AD68CD49FA2765D444DD1DA /* Pods_MedicineReminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedicineReminderUITests.framework; path = "Pods-MedicineReminderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F092754033EC5E5D8A80286FF722D5D /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
+		6155952EAB0131818B2D2CC96665CE15 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B1F4A8B16197F87E76769156DDD6C2 /* Pods-MedicineReminderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedicineReminderUITests.release.xcconfig"; sourceTree = "<group>"; };
-		636F0F494B45ED1937B67C9F529CFF7E /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
-		63A38FEBCE2E0C1EE58060D9D7AE3EC7 /* Pods_MedicineReminderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedicineReminderTests.framework; path = "Pods-MedicineReminderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620C32119BA0E652657C9D56F95307DB /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		62117E613CEBBDFB73ED25776E9D4726 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		6647ACC906E3FCEEFF3813BB32B1FCF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6783EFDB4D6E3EBBC042C02EECFE3EBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6851D0FCB59B84638696DEC6A8F78414 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
 		69618CA537692AE972D99D6026A0C8ED /* Pods-MedicineReminderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedicineReminderTests-dummy.m"; sourceTree = "<group>"; };
-		6E471EA583621735103730CCD8C08B7E /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		7210B30A7883BE20C4C252F9BC433AF8 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
-		7879F6F1FD03353066D6823E8B02CB9B /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
-		79A437C6250FB31EA2801735C1FB5C74 /* Pods_MedicineReminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedicineReminderUITests.framework; path = "Pods-MedicineReminderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC1E0FF388E38C82B9B13C2D3F8457D /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
+		703A89E6D109FB06CF2AAE755FE44542 /* SWActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWActionSheet.h; path = Pickers/SWActionSheet.h; sourceTree = "<group>"; };
+		71CB660AFB1459C24FC9365F8F25B387 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = Pickers/ActionSheetDistancePicker.m; sourceTree = "<group>"; };
+		733A17E307FAA4059DD909E443C87B66 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		7576587E1E2324222B8F621234D41762 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = Pickers/AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		76282E43AE04C665BEBE48DC35BC147E /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		7675144F870225976BF0381DE54240A2 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		76D24953D9507640E0C4EA1F64354910 /* ActionSheetPicker-3.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActionSheetPicker-3.0-dummy.m"; sourceTree = "<group>"; };
+		77592DD3038BD823199582F28CCA8DAE /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		793DCB67222740E16B782B80D51817A2 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		7BEFF1BF0AB17D7CFB156C3F60B8FEB1 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		7E2033E1E4E3E39CB000BC5E19EF40DD /* Pods-MedicineReminder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedicineReminder-frameworks.sh"; sourceTree = "<group>"; };
-		7F83A9BEABFDD3F1653FF0EE66F6A3B8 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
-		82077CE5458CF7C76B06BD2038A889AE /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		81F625A181D047DDFAAD23EAE40AF551 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
 		8337153043D2521D0CEB4871824954BB /* Pods-MedicineReminder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MedicineReminder-dummy.m"; sourceTree = "<group>"; };
-		861415D7DEFBA97AACD8F2A06B49990E /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
-		87A050039AEC8B8B6DB2597E06B4DF36 /* TextFieldEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldEffects.swift; sourceTree = "<group>"; };
+		853234A8449A044057DEB45AF54BD9BB /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		870553C0E84D40C950C0DC6A289F13FF /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		8917226D65FC65A11C0609DDEBC7ACA9 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		894590635504C02D4BDFE71130576759 /* DistancePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = Pickers/DistancePickerView.m; sourceTree = "<group>"; };
 		89C20F57CD974CCB858250CD08FB7280 /* Pods-MedicineReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedicineReminder.release.xcconfig"; sourceTree = "<group>"; };
-		9183F822AC0DCE4EE46B8CB5898F9A6D /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		928F41ED54F28D18E2B3C241B900C6CA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		932A5396FF07C6F23C1417C47B1CE990 /* Pods-MedicineReminder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MedicineReminder-acknowledgements.plist"; sourceTree = "<group>"; };
+		933CD8E72ABEE97CFD889C97DA6FA6FE /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93DE5E2209A4D4F2CD8846E88D623BBF /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
-		947EDA86066199E1F481BF63200867C9 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
-		A07F1693468617C6B06AF24D6F58DD1E /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
-		A1291736831104251284345384E3006C /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		A5AE05D8439D31030DEAB6F9EF32A090 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
-		A631409440E7D051B2306D1B29872A06 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
-		B055733C7AFEAB63C12A3C5944AE38FE /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		9EECAA2F0C1E91FA966E0C831D014BC3 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A311348A575D139DE61DA1CB17A77760 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		ABBC4C9DF46C3A894BE9613602B0E1EF /* ActionSheetPicker-3.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-umbrella.h"; sourceTree = "<group>"; };
+		AC79641C3F4BC97EEE4F22230AE09982 /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
+		AD56F5F5BBB139B63363A98C2D19216C /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB357C369D08AC6D3283C6D7D247582 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		B023A2148B1670171E01D556FDB7523F /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
+		B1366E07D4D6509006377E5C0719DFC4 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
 		B1C9D4E3FCAEA7E70F9F99D088C4C0B3 /* Pods-MedicineReminderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MedicineReminderUITests.modulemap"; sourceTree = "<group>"; };
-		B2216BC2D169C71D9EAC13F445B8EFFA /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
-		B5B3C55FD9A49AE65F2B539CF8D0B85F /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7AF99DD4D9364C2638E9BBEB1B9CD6E /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		B480752220D8BD6E54848FE50BE4EA9B /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		B71D04FB0C407424595B1965DC00B6D6 /* ActionSheetLocalePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetLocalePicker.m; path = Pickers/ActionSheetLocalePicker.m; sourceTree = "<group>"; };
+		B84ED435B715404EA7BDF2339615F615 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		BC9DAA2EED68850B7B25909AC42C9B1F /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
 		BCCB9DFE331D9AED2857668A32734926 /* Pods-MedicineReminderTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedicineReminderTests-resources.sh"; sourceTree = "<group>"; };
+		BEEC9DD0522633B92053A59356670241 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
 		BFC452FBCB21C9F02758B591F6DD630F /* Pods-MedicineReminder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MedicineReminder.modulemap"; sourceTree = "<group>"; };
-		C3616260E4D06B89EC98DAD867FF3870 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
-		C9BFCAEC99D013530A399A24CE3E7551 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		CB0324833D271B6E883DC849F0494908 /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
-		D0DA27DA216CB65FC9592DD2C9B7C61E /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
-		D2D1C2DAFB4BFF519A6281F649CC9FCD /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		C44BE2B59E5A43423E5CE6E47C29378E /* Pods_MedicineReminderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MedicineReminderTests.framework; path = "Pods-MedicineReminderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6694763853DDAC78BB6D640BC7E4A74 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		D029825089753691D0692DFFB6ACF253 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
+		D0D03A4174E9513D3255D202B4B45F0B /* ActionSheetMultipleStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetMultipleStringPicker.h; path = Pickers/ActionSheetMultipleStringPicker.h; sourceTree = "<group>"; };
+		D2BCEA10D316703A383D345AC1A15D94 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D33465E414119A748395BD5084BEB0F1 /* Pods-MedicineReminderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedicineReminderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D335BED886FF16E801BF3332AA496E57 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
-		D4B8C4F1BD61A8DF5B0A030B20D17EC3 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
-		DD58158F8CE77505C8DFDE4A57B2502B /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextFieldEffects.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D590F461F3BAAD694CC72E4E53683513 /* ActionSheetMultipleStringPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetMultipleStringPicker.m; path = Pickers/ActionSheetMultipleStringPicker.m; sourceTree = "<group>"; };
+		D9C6C301EB8F414DF5E9FC030DC2CE97 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		DC5257F77BFDE91251D8E64078C6139A /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = Pickers/ActionSheetDatePicker.h; sourceTree = "<group>"; };
+		DE6FD76732C01A8AD58C988AAB73539F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF464E974D70E91C08280E0DA1B38C82 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		E083500F8D16756F3AE0F581FF1414E3 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		E1B06FB3FBA5C3BE65FB9A2D9902470B /* ActionSheetPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetPicker.h; path = Pickers/ActionSheetPicker.h; sourceTree = "<group>"; };
 		E20FE75B2EEFBB19D477B09799869D97 /* Pods-MedicineReminderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MedicineReminderUITests-umbrella.h"; sourceTree = "<group>"; };
-		E23F6A34AB4C73CFED7FE86BAA3502A4 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		E4632A9F837E3A052BAA870D5BD34775 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
-		E4DCF3BAB687A54499E4DBB16FB88DAF /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		E34069AADE87A306468F129409926B57 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		E4C7B33755F83DB038BD1AAC205FECCC /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
 		E53280C933F74C2940B7BF558B6DC7C7 /* Pods-MedicineReminderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MedicineReminderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5E4214C9EC0C03B3319DEA8FAAD79B6 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		E6B16120DBC47EF3C82516EB381D29D1 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
 		E6BC4E3D2AEF26E292A35811F480901B /* Pods-MedicineReminderUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedicineReminderUITests-frameworks.sh"; sourceTree = "<group>"; };
-		EBADCCF2F07EF849F176B535623F09E6 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		E90688951CDA6AB61A5DFCB3F4D2FEBF /* ActionSheetCustomPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetCustomPicker.h; path = Pickers/ActionSheetCustomPicker.h; sourceTree = "<group>"; };
+		E98683C7C56A0591770D1CDCBAAE1A1B /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
 		EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		ECA7139E396896EF51E76BDA6460F23B /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
-		ECD0BE52FB6718B1BAB1EACC7758C8C4 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		EE6DDD8EA2FE9B1D03BB710468FE5DD4 /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
 		EF55EA67B3F91C1D03C91FFBCD112CD1 /* Pods-MedicineReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MedicineReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F05B12A8526BBEB55E990D0957523E11 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		F10E57D3D97F7FDE012BD88DDEF70728 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = Pickers/ActionSheetStringPicker.h; sourceTree = "<group>"; };
 		F227EC48E3FC63A0D0CA4FEBCACC2209 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C3BC147DBBCC6C10810686485EAF76 /* ActionSheetPicker-3.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-prefix.pch"; sourceTree = "<group>"; };
+		F53D0BA24519BE6F29BA211689338673 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
 		FB6CBEB8859D646DF094E9D09DFDCDEB /* Pods-MedicineReminderUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MedicineReminderUITests-resources.sh"; sourceTree = "<group>"; };
-		FE3F0BCCA251B38F7CE99F4AC5105C59 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		FB7B34F0E152DBD222AC7CF61C202714 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		FE3CB7EB819BECD7856C7FECCAEDE93A /* ActionSheetLocalePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionSheetLocalePicker.h; path = Pickers/ActionSheetLocalePicker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		04DD3CE08575016C703F938D520C6456 /* Frameworks */ = {
+		0AE21AF81E247C9CB8BD96A15051AD1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C9C00D30847AF5EB2C5F2EC5E4A74E3 /* Foundation.framework in Frameworks */,
+				2B37A32165009CA418728522604160B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D436068AABBD63095EA2131F580B440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4380B1A97B3C14F0F9564CBCA36EB1E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59E0885EF9D269547F22DB9E026FB793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21685978373609ABBDB21E9F8E013308 /* Foundation.framework in Frameworks */,
+				30997A0DDF76DE68C1505B7E8DA1324E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66076240C2ED6C56B870D99D6432B3F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F911518B639EDDB31521A96456C50CD /* Foundation.framework in Frameworks */,
+				5A79F43BF3D900FD1E8186E93841D280 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +331,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A84E14E9C028D406AB1A34571767759F /* Frameworks */ = {
+		A2A324E81F33CA8363E22E0C427CBC97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CD315769CEA2A79C5C93B7E27F87D3C /* Foundation.framework in Frameworks */,
+				9F5F331FE1FCE98CADFDD30166D6EE22 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +368,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1A6FDAE922B2F145931CC96E22DF7B42 /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				AFB357C369D08AC6D3283C6D7D247582 /* AkiraTextField.swift */,
+				BC9DAA2EED68850B7B25909AC42C9B1F /* HoshiTextField.swift */,
+				0BEAEACDD440C027E9C8F17033AC85F1 /* IsaoTextField.swift */,
+				E4C7B33755F83DB038BD1AAC205FECCC /* JiroTextField.swift */,
+				57932F149D009795BEBA7CAD2498C944 /* KaedeTextField.swift */,
+				EE6DDD8EA2FE9B1D03BB710468FE5DD4 /* MadokaTextField.swift */,
+				2F7B6A7DEDB465EDB84274AD5D67A631 /* MinoruTextField.swift */,
+				81F625A181D047DDFAAD23EAE40AF551 /* TextFieldEffects.swift */,
+				DF464E974D70E91C08280E0DA1B38C82 /* YokoTextField.swift */,
+				D9C6C301EB8F414DF5E9FC030DC2CE97 /* YoshikoTextField.swift */,
+				FA15417FEC1E81D2A59C7B56FABD826A /* Support Files */,
+			);
+			name = TextFieldEffects;
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		24D24AD191C7EEBAA756D88FD3050D30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EB9AE4C2D4BB7438580F80B33A3A20D /* ActionSheetPicker-3.0 */,
+				D40D2999C5FD577345CC111A59A2351B /* DLRadioButton */,
+				6DA694DC42B94E9EAC8B3406A5433756 /* DZNEmptyDataSet */,
+				94FECFD264FF46A3BE2F288EB6701E22 /* IQKeyboardManagerSwift */,
+				E5CCEDA2189200FC265FF72DF641B657 /* MBProgressHUD */,
+				1A6FDAE922B2F145931CC96E22DF7B42 /* TextFieldEffects */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2691F93227E549B2A03FB9E6D0C3C623 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,45 +409,6 @@
 				EC1FD743D031D373EDF29CC526F758E2 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		33415585DB3154A3D4CD22A1AAC56DC5 /* IQKeyboardManagerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				7210B30A7883BE20C4C252F9BC433AF8 /* IQBarButtonItem.swift */,
-				6E471EA583621735103730CCD8C08B7E /* IQKeyboardManager.swift */,
-				7879F6F1FD03353066D6823E8B02CB9B /* IQKeyboardManagerConstants.swift */,
-				3B121855913CFA4E7D6569095EC9EE82 /* IQKeyboardManagerConstantsInternal.swift */,
-				ECA7139E396896EF51E76BDA6460F23B /* IQKeyboardReturnKeyHandler.swift */,
-				0A8193D89D015193982EF26E332EFF6B /* IQNSArray+Sort.swift */,
-				47172827C5DBAFDB5FC5E5BF8F0DE411 /* IQPreviousNextView.swift */,
-				E4DCF3BAB687A54499E4DBB16FB88DAF /* IQTextView.swift */,
-				D335BED886FF16E801BF3332AA496E57 /* IQTitleBarButtonItem.swift */,
-				A631409440E7D051B2306D1B29872A06 /* IQToolbar.swift */,
-				404709E964BE85B73CB5290627AC1DC2 /* IQUIScrollView+Additions.swift */,
-				E23F6A34AB4C73CFED7FE86BAA3502A4 /* IQUITextFieldView+Additions.swift */,
-				52A0F76FC5FDA766B6A4F2C3ED6F0A1C /* IQUIView+Hierarchy.swift */,
-				947EDA86066199E1F481BF63200867C9 /* IQUIView+IQKeyboardToolbar.swift */,
-				82077CE5458CF7C76B06BD2038A889AE /* IQUIViewController+Additions.swift */,
-				636F0F494B45ED1937B67C9F529CFF7E /* IQUIWindow+Hierarchy.swift */,
-				CF9E29FC81A1A7A7531398CBAF4CB423 /* Resources */,
-				951542F0DE776F92E3920A73D6B4B054 /* Support Files */,
-			);
-			name = IQKeyboardManagerSwift;
-			path = IQKeyboardManagerSwift;
-			sourceTree = "<group>";
-		};
-		3560D746F2382A9E631CF5B7B9943705 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				43998DBD993D24BCB55F3B3ABD8F890B /* IQKeyboardManagerSwift.framework */,
-				B5B3C55FD9A49AE65F2B539CF8D0B85F /* MBProgressHUD.framework */,
-				3F3F9E1CA5653F23C3D6ED6FD0E6CE80 /* Pods_MedicineReminder.framework */,
-				63A38FEBCE2E0C1EE58060D9D7AE3EC7 /* Pods_MedicineReminderTests.framework */,
-				79A437C6250FB31EA2801735C1FB5C74 /* Pods_MedicineReminderUITests.framework */,
-				DD58158F8CE77505C8DFDE4A57B2502B /* TextFieldEffects.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4F0783C695E081AC3BC82CD2EF382B59 /* Pods-MedicineReminderUITests */ = {
@@ -309,18 +429,29 @@
 			path = "Target Support Files/Pods-MedicineReminderUITests";
 			sourceTree = "<group>";
 		};
-		73992747D8248516E5D1211BBB643C24 /* Support Files */ = {
+		535295DB785ADF0D4216E1EF94F81E78 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				381FBE0B6819EAA6DC2D35D558686012 /* Info.plist */,
-				D4B8C4F1BD61A8DF5B0A030B20D17EC3 /* MBProgressHUD.modulemap */,
-				2329B5911E09DC69FDCE530441D2F330 /* MBProgressHUD.xcconfig */,
-				19A275CDE0D7CAFEABDC27B5BB0AA1B6 /* MBProgressHUD-dummy.m */,
-				A1291736831104251284345384E3006C /* MBProgressHUD-prefix.pch */,
-				9183F822AC0DCE4EE46B8CB5898F9A6D /* MBProgressHUD-umbrella.h */,
+				59759257FDF92A983D4AFBADCED430C9 /* DZNEmptyDataSet.modulemap */,
+				D029825089753691D0692DFFB6ACF253 /* DZNEmptyDataSet.xcconfig */,
+				14DC7AC4881411492AF61D758100B476 /* DZNEmptyDataSet-dummy.m */,
+				13607B3571737C04F503291F54581EB6 /* DZNEmptyDataSet-prefix.pch */,
+				2E714520568D1FA1061163CE28C3868D /* DZNEmptyDataSet-umbrella.h */,
+				412C4C7F87235ED25DC700EA8F72F7E3 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
+			path = "../Target Support Files/DZNEmptyDataSet";
+			sourceTree = "<group>";
+		};
+		6DA694DC42B94E9EAC8B3406A5433756 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				933CD8E72ABEE97CFD889C97DA6FA6FE /* UIScrollView+EmptyDataSet.h */,
+				FB7B34F0E152DBD222AC7CF61C202714 /* UIScrollView+EmptyDataSet.m */,
+				535295DB785ADF0D4216E1EF94F81E78 /* Support Files */,
+			);
+			name = DZNEmptyDataSet;
+			path = DZNEmptyDataSet;
 			sourceTree = "<group>";
 		};
 		748B59F7DDF7377125278CC51131A850 /* Targets Support Files */ = {
@@ -333,39 +464,70 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		767A47A99482B829196E4EBB05BDD182 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				33415585DB3154A3D4CD22A1AAC56DC5 /* IQKeyboardManagerSwift */,
-				FD8F9660D034D7A31ACA582F5D5C3F07 /* MBProgressHUD */,
-				EA8B8A8960E5C92B2C376541D1195683 /* TextFieldEffects */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				767A47A99482B829196E4EBB05BDD182 /* Pods */,
-				3560D746F2382A9E631CF5B7B9943705 /* Products */,
+				24D24AD191C7EEBAA756D88FD3050D30 /* Pods */,
+				A8DDA79622E6A2EE858351DAE983736A /* Products */,
 				748B59F7DDF7377125278CC51131A850 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		951542F0DE776F92E3920A73D6B4B054 /* Support Files */ = {
+		8EB9AE4C2D4BB7438580F80B33A3A20D /* ActionSheetPicker-3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				4D2531D3527BC1CC5F8DBFF432D180AC /* Info.plist */,
-				93DE5E2209A4D4F2CD8846E88D623BBF /* IQKeyboardManagerSwift.modulemap */,
-				C3616260E4D06B89EC98DAD867FF3870 /* IQKeyboardManagerSwift.xcconfig */,
-				B7AF99DD4D9364C2638E9BBEB1B9CD6E /* IQKeyboardManagerSwift-dummy.m */,
-				861415D7DEFBA97AACD8F2A06B49990E /* IQKeyboardManagerSwift-prefix.pch */,
-				B055733C7AFEAB63C12A3C5944AE38FE /* IQKeyboardManagerSwift-umbrella.h */,
+				7576587E1E2324222B8F621234D41762 /* AbstractActionSheetPicker.h */,
+				F05B12A8526BBEB55E990D0957523E11 /* AbstractActionSheetPicker.m */,
+				E90688951CDA6AB61A5DFCB3F4D2FEBF /* ActionSheetCustomPicker.h */,
+				33F81AEA07B6821FEF5075CBD9543993 /* ActionSheetCustomPicker.m */,
+				51E5BA998DBD6CDF7818CE3E486B510F /* ActionSheetCustomPickerDelegate.h */,
+				DC5257F77BFDE91251D8E64078C6139A /* ActionSheetDatePicker.h */,
+				5F092754033EC5E5D8A80286FF722D5D /* ActionSheetDatePicker.m */,
+				3C2CE39AA4DDFBCEA2FF2BB1AF346F75 /* ActionSheetDistancePicker.h */,
+				71CB660AFB1459C24FC9365F8F25B387 /* ActionSheetDistancePicker.m */,
+				FE3CB7EB819BECD7856C7FECCAEDE93A /* ActionSheetLocalePicker.h */,
+				B71D04FB0C407424595B1965DC00B6D6 /* ActionSheetLocalePicker.m */,
+				D0D03A4174E9513D3255D202B4B45F0B /* ActionSheetMultipleStringPicker.h */,
+				D590F461F3BAAD694CC72E4E53683513 /* ActionSheetMultipleStringPicker.m */,
+				E1B06FB3FBA5C3BE65FB9A2D9902470B /* ActionSheetPicker.h */,
+				F10E57D3D97F7FDE012BD88DDEF70728 /* ActionSheetStringPicker.h */,
+				4519F267018F01F834417C142573EDBB /* ActionSheetStringPicker.m */,
+				2AAB7A7923AE7419BA3851DA0FAC5175 /* DistancePickerView.h */,
+				894590635504C02D4BDFE71130576759 /* DistancePickerView.m */,
+				703A89E6D109FB06CF2AAE755FE44542 /* SWActionSheet.h */,
+				AC79641C3F4BC97EEE4F22230AE09982 /* SWActionSheet.m */,
+				DA6114454565ABCAC764B2673DA40BA0 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IQKeyboardManagerSwift";
+			name = "ActionSheetPicker-3.0";
+			path = "ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		94FECFD264FF46A3BE2F288EB6701E22 /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				008DE6672F57DB6FD1F2D782EEA6D936 /* IQBarButtonItem.swift */,
+				0B972A0A599FFEBD80DEB5E6833B1B82 /* IQKeyboardManager.swift */,
+				E5E4214C9EC0C03B3319DEA8FAAD79B6 /* IQKeyboardManagerConstants.swift */,
+				733A17E307FAA4059DD909E443C87B66 /* IQKeyboardManagerConstantsInternal.swift */,
+				7675144F870225976BF0381DE54240A2 /* IQKeyboardReturnKeyHandler.swift */,
+				7BEFF1BF0AB17D7CFB156C3F60B8FEB1 /* IQNSArray+Sort.swift */,
+				BEEC9DD0522633B92053A59356670241 /* IQPreviousNextView.swift */,
+				A311348A575D139DE61DA1CB17A77760 /* IQTextView.swift */,
+				E6B16120DBC47EF3C82516EB381D29D1 /* IQTitleBarButtonItem.swift */,
+				B1366E07D4D6509006377E5C0719DFC4 /* IQToolbar.swift */,
+				C6694763853DDAC78BB6D640BC7E4A74 /* IQUIScrollView+Additions.swift */,
+				3384C976845B4BD6C23DB89F69FEAF71 /* IQUITextFieldView+Additions.swift */,
+				8917226D65FC65A11C0609DDEBC7ACA9 /* IQUIView+Hierarchy.swift */,
+				277873935B9204CAA4856710EA942417 /* IQUIView+IQKeyboardToolbar.swift */,
+				3AC635259B0AD811FD85662A897345DC /* IQUIViewController+Additions.swift */,
+				2C128A4F15C417AABB58F8EE7E60A283 /* IQUIWindow+Hierarchy.swift */,
+				D7E56C56178A2EA46866ECA6F896FCB8 /* Resources */,
+				DB4A073B401BFD973AA89D91BD9E329F /* Support Files */,
+			);
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
 		97AA26C018D0C49E59E8674E6DBE7A35 /* Pods-MedicineReminderTests */ = {
@@ -386,45 +548,120 @@
 			path = "Target Support Files/Pods-MedicineReminderTests";
 			sourceTree = "<group>";
 		};
-		C372EA76C41EDA7D9A35A5DDBB793DE5 /* Support Files */ = {
+		A8DDA79622E6A2EE858351DAE983736A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				283CF5CBF2060E91461E481EB712658D /* Info.plist */,
-				341310E43A5ABBD4764934569B50ABA4 /* TextFieldEffects.modulemap */,
-				FE3F0BCCA251B38F7CE99F4AC5105C59 /* TextFieldEffects.xcconfig */,
-				D2D1C2DAFB4BFF519A6281F649CC9FCD /* TextFieldEffects-dummy.m */,
-				2DE1BA1DE00C7A91D3B5D8DE292E76B1 /* TextFieldEffects-prefix.pch */,
-				7F83A9BEABFDD3F1653FF0EE66F6A3B8 /* TextFieldEffects-umbrella.h */,
+				531A0E11EB4A5BF3628C0650752D2D60 /* ActionSheetPicker_3_0.framework */,
+				014164A86052860CE44E35D1ECD90F9A /* DLRadioButton.framework */,
+				14AB7AF6ABCB884912B6A475B3E76B39 /* DZNEmptyDataSet.framework */,
+				9EECAA2F0C1E91FA966E0C831D014BC3 /* IQKeyboardManagerSwift.framework */,
+				AD56F5F5BBB139B63363A98C2D19216C /* MBProgressHUD.framework */,
+				471E40244A51AC42347649AC331CAC59 /* Pods_MedicineReminder.framework */,
+				C44BE2B59E5A43423E5CE6E47C29378E /* Pods_MedicineReminderTests.framework */,
+				5D71B5540AD68CD49FA2765D444DD1DA /* Pods_MedicineReminderUITests.framework */,
+				6155952EAB0131818B2D2CC96665CE15 /* TextFieldEffects.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/TextFieldEffects";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		CF9E29FC81A1A7A7531398CBAF4CB423 /* Resources */ = {
+		D40D2999C5FD577345CC111A59A2351B /* DLRadioButton */ = {
 			isa = PBXGroup;
 			children = (
-				EBADCCF2F07EF849F176B535623F09E6 /* IQKeyboardManager.bundle */,
+				3D036856425A0A3AB2D1798BEA3844B4 /* DLRadioButton.h */,
+				54459E250F8BD8C460888BF24EED6081 /* DLRadioButton.m */,
+				F8ABE6100543FE211A1EE80B1C7A43D5 /* Support Files */,
+			);
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		D7E56C56178A2EA46866ECA6F896FCB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				870553C0E84D40C950C0DC6A289F13FF /* IQKeyboardManager.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		EA8B8A8960E5C92B2C376541D1195683 /* TextFieldEffects */ = {
+		DA6114454565ABCAC764B2673DA40BA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5AE05D8439D31030DEAB6F9EF32A090 /* AkiraTextField.swift */,
-				350E002C7B6257808655AC6923B4674C /* HoshiTextField.swift */,
-				A07F1693468617C6B06AF24D6F58DD1E /* IsaoTextField.swift */,
-				2998451461C100260F4C64801782053F /* JiroTextField.swift */,
-				CB0324833D271B6E883DC849F0494908 /* KaedeTextField.swift */,
-				3E5FE09287874A257464185489C458A9 /* MadokaTextField.swift */,
-				E4632A9F837E3A052BAA870D5BD34775 /* MinoruTextField.swift */,
-				87A050039AEC8B8B6DB2597E06B4DF36 /* TextFieldEffects.swift */,
-				D0DA27DA216CB65FC9592DD2C9B7C61E /* YokoTextField.swift */,
-				B2216BC2D169C71D9EAC13F445B8EFFA /* YoshikoTextField.swift */,
-				C372EA76C41EDA7D9A35A5DDBB793DE5 /* Support Files */,
+				1A5FBFC58D096E3E2AC8458C009D5B76 /* ActionSheetPicker-3.0.modulemap */,
+				49C2F37EE45EF3D1C837FEA06D434B95 /* ActionSheetPicker-3.0.xcconfig */,
+				76D24953D9507640E0C4EA1F64354910 /* ActionSheetPicker-3.0-dummy.m */,
+				F4C3BC147DBBCC6C10810686485EAF76 /* ActionSheetPicker-3.0-prefix.pch */,
+				ABBC4C9DF46C3A894BE9613602B0E1EF /* ActionSheetPicker-3.0-umbrella.h */,
+				DE6FD76732C01A8AD58C988AAB73539F /* Info.plist */,
 			);
-			name = TextFieldEffects;
-			path = TextFieldEffects;
+			name = "Support Files";
+			path = "../Target Support Files/ActionSheetPicker-3.0";
+			sourceTree = "<group>";
+		};
+		DB4A073B401BFD973AA89D91BD9E329F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16681C76CD2656902BC321EEB3967CE7 /* Info.plist */,
+				27C02A406C2DE6EEC505BBADB89D98F5 /* IQKeyboardManagerSwift.modulemap */,
+				6851D0FCB59B84638696DEC6A8F78414 /* IQKeyboardManagerSwift.xcconfig */,
+				B84ED435B715404EA7BDF2339615F615 /* IQKeyboardManagerSwift-dummy.m */,
+				F53D0BA24519BE6F29BA211689338673 /* IQKeyboardManagerSwift-prefix.pch */,
+				620C32119BA0E652657C9D56F95307DB /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		DBBFE411801B22951D7368060DCD2CE6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6783EFDB4D6E3EBBC042C02EECFE3EBB /* Info.plist */,
+				E083500F8D16756F3AE0F581FF1414E3 /* MBProgressHUD.modulemap */,
+				E34069AADE87A306468F129409926B57 /* MBProgressHUD.xcconfig */,
+				62117E613CEBBDFB73ED25776E9D4726 /* MBProgressHUD-dummy.m */,
+				530092C732F885BCE4888E9429A53629 /* MBProgressHUD-prefix.pch */,
+				02A418D7C2698A20E01F7A180B71B564 /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		E5CCEDA2189200FC265FF72DF641B657 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				853234A8449A044057DEB45AF54BD9BB /* MBProgressHUD.h */,
+				928F41ED54F28D18E2B3C241B900C6CA /* MBProgressHUD.m */,
+				DBBFE411801B22951D7368060DCD2CE6 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F8ABE6100543FE211A1EE80B1C7A43D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20FF9E2F58D017A1B52A385546BF62FD /* DLRadioButton.modulemap */,
+				6DC1E0FF388E38C82B9B13C2D3F8457D /* DLRadioButton.xcconfig */,
+				77592DD3038BD823199582F28CCA8DAE /* DLRadioButton-dummy.m */,
+				0F29E6FB5F1D14853870C1A32ED1B859 /* DLRadioButton-prefix.pch */,
+				793DCB67222740E16B782B80D51817A2 /* DLRadioButton-umbrella.h */,
+				D2BCEA10D316703A383D345AC1A15D94 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
+			sourceTree = "<group>";
+		};
+		FA15417FEC1E81D2A59C7B56FABD826A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1759F29CDCA44CCF242FB34EB916ADB2 /* Info.plist */,
+				B480752220D8BD6E54848FE50BE4EA9B /* TextFieldEffects.modulemap */,
+				35C271B193D8C671DBFB9DAE376C19E9 /* TextFieldEffects.xcconfig */,
+				E98683C7C56A0591770D1CDCBAAE1A1B /* TextFieldEffects-dummy.m */,
+				76282E43AE04C665BEBE48DC35BC147E /* TextFieldEffects-prefix.pch */,
+				B023A2148B1670171E01D556FDB7523F /* TextFieldEffects-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
 		FA2221CE204664A5B2B826875098C4D0 /* Pods-MedicineReminder */ = {
@@ -445,17 +682,6 @@
 			path = "Target Support Files/Pods-MedicineReminder";
 			sourceTree = "<group>";
 		};
-		FD8F9660D034D7A31ACA582F5D5C3F07 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				ECD0BE52FB6718B1BAB1EACC7758C8C4 /* MBProgressHUD.h */,
-				C9BFCAEC99D013530A399A24CE3E7551 /* MBProgressHUD.m */,
-				73992747D8248516E5D1211BBB643C24 /* Support Files */,
-			);
-			name = MBProgressHUD;
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -468,11 +694,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64C39E2AF6E100BE5EE613135534CCD3 /* Headers */ = {
+		220E61F93FBE49E9C3EBBEE5E9331C18 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DE2695BC44C8993742421491232E3C3 /* Pods-MedicineReminder-umbrella.h in Headers */,
+				84116DD709725E60919846D7B1AF714B /* DLRadioButton-umbrella.h in Headers */,
+				8F2D8EC348F59816CFDEA65538E3E532 /* DLRadioButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D690672D0A1E3209555A6A08F3698BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23AE55B3EEA4D4D7D67A5B006ED7F7B2 /* Pods-MedicineReminder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653FFE72514B935712D0CE1053D47AD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C144355E41C99902528AAD3CF069680 /* DZNEmptyDataSet-umbrella.h in Headers */,
+				8511E9645F5C2B18746B4B4B29284451 /* UIScrollView+EmptyDataSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7168AF4B49EE1459BCE8AC958F7EC526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2680FB2A9AAFE79796C23A20390CEF45 /* AbstractActionSheetPicker.h in Headers */,
+				90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */,
+				AE84E0341C26A9B5C8E1501C8E8AAC8F /* ActionSheetCustomPickerDelegate.h in Headers */,
+				9BC276383ED044BB0926AFDFD73F928E /* ActionSheetDatePicker.h in Headers */,
+				1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */,
+				82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */,
+				6C16BD3BCB1B65194E7CEA5CF15AD446 /* ActionSheetMultipleStringPicker.h in Headers */,
+				83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */,
+				9B2B8491E6B1B8EA1C9ACD37341C726B /* ActionSheetPicker.h in Headers */,
+				BDBFA441010D34FB51DC32F28314AD8D /* ActionSheetStringPicker.h in Headers */,
+				CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */,
+				0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,19 +747,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5D323422A2B1E0C059FE761F3C92499 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				159896997AFE04C4FDD9926CC2B4DF25 /* TextFieldEffects-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C82B5F04767CB991E84734A54D0ABA5B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CDB511EA5C1ECE888C0393AC4D0D421C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73A4AB15E9B28725AA6BEDAFF5783062 /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +788,41 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = B5B3C55FD9A49AE65F2B539CF8D0B85F /* MBProgressHUD.framework */;
+			productReference = AD56F5F5BBB139B63363A98C2D19216C /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		62370B7B0334A5E9DDEA712F480C8097 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BB78428C91788B7CEC04FF566331D6 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				9189644FFA36D69692A8CF0912205841 /* Sources */,
+				0D436068AABBD63095EA2131F580B440 /* Frameworks */,
+				A5D323422A2B1E0C059FE761F3C92499 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 6155952EAB0131818B2D2CC96665CE15 /* TextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */;
+			buildPhases = (
+				93F271AD7E26CF5BCFADCFB7A504897D /* Sources */,
+				66076240C2ED6C56B870D99D6432B3F4 /* Frameworks */,
+				7168AF4B49EE1459BCE8AC958F7EC526 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ActionSheetPicker-3.0";
+			productName = "ActionSheetPicker-3.0";
+			productReference = 531A0E11EB4A5BF3628C0650752D2D60 /* ActionSheetPicker_3_0.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		99E3E1F7B95CE4849882566D5AD69E56 /* Pods-MedicineReminderUITests */ = {
@@ -542,44 +839,7 @@
 			);
 			name = "Pods-MedicineReminderUITests";
 			productName = "Pods-MedicineReminderUITests";
-			productReference = 79A437C6250FB31EA2801735C1FB5C74 /* Pods_MedicineReminderUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A33EF00DF891A89CAA678387DE5F77C9 /* Pods-MedicineReminder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9E4B69CE51164767BDD5D72BAC348C8E /* Build configuration list for PBXNativeTarget "Pods-MedicineReminder" */;
-			buildPhases = (
-				AE23A7A1B288078F56C23E4A378DAD78 /* Sources */,
-				A84E14E9C028D406AB1A34571767759F /* Frameworks */,
-				64C39E2AF6E100BE5EE613135534CCD3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC1EDEECFCAC77A0057A7FEDFBF09903 /* PBXTargetDependency */,
-				E77A40B06DA4FB1E9111EEAA6EC38B30 /* PBXTargetDependency */,
-				DEDDDF09F36711904BA27585403A60C5 /* PBXTargetDependency */,
-			);
-			name = "Pods-MedicineReminder";
-			productName = "Pods-MedicineReminder";
-			productReference = 3F3F9E1CA5653F23C3D6ED6FD0E6CE80 /* Pods_MedicineReminder.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B92B099B8C97B35101B8DC44597A077D /* TextFieldEffects */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEC44B987A368F3BCB319CF955399284 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
-			buildPhases = (
-				AA77AE1664F1F071756C5011DB5A03C1 /* Sources */,
-				04DD3CE08575016C703F938D520C6456 /* Frameworks */,
-				CDB511EA5C1ECE888C0393AC4D0D421C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TextFieldEffects;
-			productName = TextFieldEffects;
-			productReference = DD58158F8CE77505C8DFDE4A57B2502B /* TextFieldEffects.framework */;
+			productReference = 5D71B5540AD68CD49FA2765D444DD1DA /* Pods_MedicineReminderUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */ = {
@@ -597,7 +857,24 @@
 			);
 			name = IQKeyboardManagerSwift;
 			productName = IQKeyboardManagerSwift;
-			productReference = 43998DBD993D24BCB55F3B3ABD8F890B /* IQKeyboardManagerSwift.framework */;
+			productReference = 9EECAA2F0C1E91FA966E0C831D014BC3 /* IQKeyboardManagerSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D386C75EFD4F03725E4EFB866B600B9A /* DZNEmptyDataSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2CBCE24382919CB3DBFC8BB3CC6503 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
+			buildPhases = (
+				5235DD2B24AFCD194FE2DD74A43760D8 /* Sources */,
+				59E0885EF9D269547F22DB9E026FB793 /* Frameworks */,
+				653FFE72514B935712D0CE1053D47AD6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZNEmptyDataSet;
+			productName = DZNEmptyDataSet;
+			productReference = 14AB7AF6ABCB884912B6A475B3E76B39 /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EF4ABA5E1DDF6769D6D2A8592299661B /* Pods-MedicineReminderTests */ = {
@@ -614,7 +891,47 @@
 			);
 			name = "Pods-MedicineReminderTests";
 			productName = "Pods-MedicineReminderTests";
-			productReference = 63A38FEBCE2E0C1EE58060D9D7AE3EC7 /* Pods_MedicineReminderTests.framework */;
+			productReference = C44BE2B59E5A43423E5CE6E47C29378E /* Pods_MedicineReminderTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118FCC60066EF1D7DD17E50B82C12AA4 /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildPhases = (
+				8F67A4B4F56469850BF8A099A6E12AE8 /* Sources */,
+				A2A324E81F33CA8363E22E0C427CBC97 /* Frameworks */,
+				220E61F93FBE49E9C3EBBEE5E9331C18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLRadioButton;
+			productName = DLRadioButton;
+			productReference = 014164A86052860CE44E35D1ECD90F9A /* DLRadioButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8ACA7A9BBF203CC25D5C594974586C2 /* Pods-MedicineReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5FEF82C79CAA530D8E097810D993FF /* Build configuration list for PBXNativeTarget "Pods-MedicineReminder" */;
+			buildPhases = (
+				28207FC641DF909E0E20D709F8C7334F /* Sources */,
+				0AE21AF81E247C9CB8BD96A15051AD1A /* Frameworks */,
+				4D690672D0A1E3209555A6A08F3698BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2984347F022EEB0A523570A3D3BE46C9 /* PBXTargetDependency */,
+				4EDE9D746902D08395600D299F8AABBE /* PBXTargetDependency */,
+				600BB243E8E4F5E677D84433879A9E19 /* PBXTargetDependency */,
+				43B4B2B3BD9D79CD79CF47D2ADD360D8 /* PBXTargetDependency */,
+				D4476B2034B78B84F13EAADA93656270 /* PBXTargetDependency */,
+				3F3B92116830F59EBF31C18BF48B84A7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MedicineReminder";
+			productName = "Pods-MedicineReminder";
+			productReference = 471E40244A51AC42347649AC331CAC59 /* Pods_MedicineReminder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -634,16 +951,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3560D746F2382A9E631CF5B7B9943705 /* Products */;
+			productRefGroup = A8DDA79622E6A2EE858351DAE983736A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */,
+				F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */,
+				D386C75EFD4F03725E4EFB866B600B9A /* DZNEmptyDataSet */,
 				C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */,
 				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
-				A33EF00DF891A89CAA678387DE5F77C9 /* Pods-MedicineReminder */,
+				F8ACA7A9BBF203CC25D5C594974586C2 /* Pods-MedicineReminder */,
 				EF4ABA5E1DDF6769D6D2A8592299661B /* Pods-MedicineReminderTests */,
 				99E3E1F7B95CE4849882566D5AD69E56 /* Pods-MedicineReminderUITests */,
-				B92B099B8C97B35101B8DC44597A077D /* TextFieldEffects */,
+				62370B7B0334A5E9DDEA712F480C8097 /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
@@ -668,6 +988,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		28207FC641DF909E0E20D709F8C7334F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921A1CB0E85A7A48033FE5A4EB8D7708 /* Pods-MedicineReminder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5235DD2B24AFCD194FE2DD74A43760D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D0A461B8CF202F41C55CA1E732124C /* DZNEmptyDataSet-dummy.m in Sources */,
+				4568C6CC7F78399CA1312B20E26EA8FE /* UIScrollView+EmptyDataSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74292F30D6DF28323F2D6682D385170E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,29 +1013,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA77AE1664F1F071756C5011DB5A03C1 /* Sources */ = {
+		8F67A4B4F56469850BF8A099A6E12AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E938DBFCEE4D3DCF21A62C4200F8EA7A /* AkiraTextField.swift in Sources */,
-				6898A22B9E545C6C8511AC87CA334441 /* HoshiTextField.swift in Sources */,
-				9B22E0C0B8AE69B27520786671F57B82 /* IsaoTextField.swift in Sources */,
-				ABC7A68CD75002ADB55E733BF21C3674 /* JiroTextField.swift in Sources */,
-				953D3174C674FFDA9F39F5902620C7EF /* KaedeTextField.swift in Sources */,
-				FF0475C5015EA0B6C285941D5CA59CAB /* MadokaTextField.swift in Sources */,
-				26313543822DAFC695444F79B7B1EBCE /* MinoruTextField.swift in Sources */,
-				0C97C02CD6531D0F752BBB66E98FDA90 /* TextFieldEffects-dummy.m in Sources */,
-				C998BC9FCF7A2ADC12F832EFE3AE6C57 /* TextFieldEffects.swift in Sources */,
-				DDF8C8F1114F1920C1858EA2D087C5E5 /* YokoTextField.swift in Sources */,
-				C271F7B7BCE0317C29C898048EE4A138 /* YoshikoTextField.swift in Sources */,
+				5E7E0B70C0D1CCD0AC694A99E8324ECD /* DLRadioButton-dummy.m in Sources */,
+				EF2F59EEA3194DFCFB39352F4DA16D76 /* DLRadioButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE23A7A1B288078F56C23E4A378DAD78 /* Sources */ = {
+		9189644FFA36D69692A8CF0912205841 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD663C11144168BACC4CE2455DE82895 /* Pods-MedicineReminder-dummy.m in Sources */,
+				20F0ADEC8063B461B3957C77C4AA6429 /* AkiraTextField.swift in Sources */,
+				2C96AD2998026979EC383A4C654AE2EC /* HoshiTextField.swift in Sources */,
+				A59125195D239C0FCDBCCD587FCAAE65 /* IsaoTextField.swift in Sources */,
+				7637BA9264CCB54EEA89D2B71B0EFC02 /* JiroTextField.swift in Sources */,
+				8C647407B8BB2453C373CDEE5222A29F /* KaedeTextField.swift in Sources */,
+				FE1DBFA6F739F189B7D9B84C8B33B41A /* MadokaTextField.swift in Sources */,
+				A4EDEA0ACF870CCF3FA13CA203B2AAED /* MinoruTextField.swift in Sources */,
+				96ED46F1185A99033F7D50836041A410 /* TextFieldEffects-dummy.m in Sources */,
+				F80B057DEB991C088E10635EE5CA8CAD /* TextFieldEffects.swift in Sources */,
+				EE07477EB879784372EADAEC105458EE /* YokoTextField.swift in Sources */,
+				E43227369C604FE2C9645AD78949EB85 /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F271AD7E26CF5BCFADCFB7A504897D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B867960879FDDD089A9E41F027E13B9 /* AbstractActionSheetPicker.m in Sources */,
+				E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */,
+				1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */,
+				246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */,
+				430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */,
+				DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */,
+				29C34B43AFA7A1D88AB188801C76E08C /* ActionSheetPicker-3.0-dummy.m in Sources */,
+				C6CB72E223B27A0C2B06910EC0FADF67 /* ActionSheetStringPicker.m in Sources */,
+				3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */,
+				E049CE807DA7A012BA222DE64920C3D1 /* SWActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,23 +1093,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CC1EDEECFCAC77A0057A7FEDFBF09903 /* PBXTargetDependency */ = {
+		2984347F022EEB0A523570A3D3BE46C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ActionSheetPicker-3.0";
+			target = 965699190112DDBD9B7864D091660DBC /* ActionSheetPicker-3.0 */;
+			targetProxy = 5CBCCF4314D11772CB77EA5B3D36072F /* PBXContainerItemProxy */;
+		};
+		3F3B92116830F59EBF31C18BF48B84A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = 62370B7B0334A5E9DDEA712F480C8097 /* TextFieldEffects */;
+			targetProxy = 75A5D9599F9646919F2DC3DDE8DB3F68 /* PBXContainerItemProxy */;
+		};
+		43B4B2B3BD9D79CD79CF47D2ADD360D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IQKeyboardManagerSwift;
 			target = C235F77E101E742652CCF98FFDFA5182 /* IQKeyboardManagerSwift */;
-			targetProxy = E27D4D2EF138CCAB2B6B7534EB752C66 /* PBXContainerItemProxy */;
+			targetProxy = 4620EE88AF748EC843C666752AFAA657 /* PBXContainerItemProxy */;
 		};
-		DEDDDF09F36711904BA27585403A60C5 /* PBXTargetDependency */ = {
+		4EDE9D746902D08395600D299F8AABBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TextFieldEffects;
-			target = B92B099B8C97B35101B8DC44597A077D /* TextFieldEffects */;
-			targetProxy = CB25760FF0DF8C999BD27EEBB29C05DA /* PBXContainerItemProxy */;
+			name = DLRadioButton;
+			target = F6A77E2753C279F67F70C5C21D6FAE15 /* DLRadioButton */;
+			targetProxy = 27742FF4CF7955CB35B9561B6E6C09C7 /* PBXContainerItemProxy */;
 		};
-		E77A40B06DA4FB1E9111EEAA6EC38B30 /* PBXTargetDependency */ = {
+		600BB243E8E4F5E677D84433879A9E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNEmptyDataSet;
+			target = D386C75EFD4F03725E4EFB866B600B9A /* DZNEmptyDataSet */;
+			targetProxy = 44680B7C43F721BBC593B9185EDE08B5 /* PBXContainerItemProxy */;
+		};
+		D4476B2034B78B84F13EAADA93656270 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
-			targetProxy = 311064482131FF2A193CCF525BD834E4 /* PBXContainerItemProxy */;
+			targetProxy = 48625ACACF97A4224433BBAEB6FE311D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -840,7 +1213,7 @@
 		};
 		1994253EDDB2BF68F8BBD7A273572B22 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3616260E4D06B89EC98DAD867FF3870 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 6851D0FCB59B84638696DEC6A8F78414 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -864,6 +1237,41 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A0786AA96920BDDDF3E4C9AF2FFDE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C20F57CD974CCB858250CD08FB7280 /* Pods-MedicineReminder.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MedicineReminder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedicineReminder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -899,6 +1307,74 @@
 				PRODUCT_NAME = Pods_MedicineReminderUITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BCE0805F247CD432444A5A7155C5686 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC1E0FF388E38C82B9B13C2D3F8457D /* DLRadioButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41024772EC0A685A1EDDFAB64E6C3530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01DC5D2F4FD098434E62B50073E21A26 /* Pods-MedicineReminder.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MedicineReminder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MedicineReminder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -945,15 +1421,15 @@
 			};
 			name = Release;
 		};
-		5024DAD30BC6A79695B7ABA6EB0F1AE6 /* Debug */ = {
+		56A156A38D167F59D2EAE8B8924043C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE3F0BCCA251B38F7CE99F4AC5105C59 /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = 35C271B193D8C671DBFB9DAE376C19E9 /* TextFieldEffects.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -966,21 +1442,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = TextFieldEffects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		5A7D61BFAF476FFEAAC1C3C5B50DD91C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2329B5911E09DC69FDCE530441D2F330 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = E34069AADE87A306468F129409926B57 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1010,9 +1485,9 @@
 			};
 			name = Release;
 		};
-		90BDB298F991393A1C3AF0D27C215920 /* Debug */ = {
+		82C4DCE713E4A5C357954DA6240CBD3A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01DC5D2F4FD098434E62B50073E21A26 /* Pods-MedicineReminder.debug.xcconfig */;
+			baseConfigurationReference = 49C2F37EE45EF3D1C837FEA06D434B95 /* ActionSheetPicker-3.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1025,21 +1500,49 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MedicineReminder/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MedicineReminder;
+				PRODUCT_NAME = ActionSheetPicker_3_0;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8AAA9E77A095DA5CEB8AEEB6C49DF400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC1E0FF388E38C82B9B13C2D3F8457D /* DLRadioButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1048,7 +1551,7 @@
 		};
 		91A3BB7C0922BE384B1AC86989164A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3616260E4D06B89EC98DAD867FF3870 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 6851D0FCB59B84638696DEC6A8F78414 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1114,9 +1617,9 @@
 			};
 			name = Debug;
 		};
-		BFC1F2DC5DFAFD7DB4454F47112890D9 /* Release */ = {
+		B99ACAF27FC88DB1AD9E22B33681CA37 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE3F0BCCA251B38F7CE99F4AC5105C59 /* TextFieldEffects.xcconfig */;
+			baseConfigurationReference = 49C2F37EE45EF3D1C837FEA06D434B95 /* ActionSheetPicker-3.0.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1129,14 +1632,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TextFieldEffects;
+				PRODUCT_NAME = ActionSheetPicker_3_0;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1145,6 +1648,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		CAE705AA7F1E54FF7383C747F3AE5C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D029825089753691D0692DFFB6ACF253 /* DZNEmptyDataSet.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DZNEmptyDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		CF2B6277ED90E407E329CC6564DB54E1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1183,7 +1718,7 @@
 		};
 		D75065D84EBB32D4AF0CA10C29B62DBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2329B5911E09DC69FDCE530441D2F330 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = E34069AADE87A306468F129409926B57 /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1213,9 +1748,42 @@
 			};
 			name = Debug;
 		};
-		EA14072235A520C78969F85F4C29F5F8 /* Release */ = {
+		E8E7D86A68CF2E9DA468578266A63F3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C20F57CD974CCB858250CD08FB7280 /* Pods-MedicineReminder.release.xcconfig */;
+			baseConfigurationReference = 35C271B193D8C671DBFB9DAE376C19E9 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD955D09C8234320BDE1F0C7F1E6675F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D029825089753691D0692DFFB6ACF253 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1228,20 +1796,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MedicineReminder/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.modulemap";
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MedicineReminder;
+				PRODUCT_NAME = DZNEmptyDataSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1251,6 +1816,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09BB78428C91788B7CEC04FF566331D6 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E7D86A68CF2E9DA468578266A63F3C /* Debug */,
+				56A156A38D167F59D2EAE8B8924043C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118FCC60066EF1D7DD17E50B82C12AA4 /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AAA9E77A095DA5CEB8AEEB6C49DF400 /* Debug */,
+				3BCE0805F247CD432444A5A7155C5686 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5FEF82C79CAA530D8E097810D993FF /* Build configuration list for PBXNativeTarget "Pods-MedicineReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41024772EC0A685A1EDDFAB64E6C3530 /* Debug */,
+				2A0786AA96920BDDDF3E4C9AF2FFDE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1269,11 +1861,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E4B69CE51164767BDD5D72BAC348C8E /* Build configuration list for PBXNativeTarget "Pods-MedicineReminder" */ = {
+		7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				90BDB298F991393A1C3AF0D27C215920 /* Debug */,
-				EA14072235A520C78969F85F4C29F5F8 /* Release */,
+				82C4DCE713E4A5C357954DA6240CBD3A /* Debug */,
+				B99ACAF27FC88DB1AD9E22B33681CA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1283,6 +1875,15 @@
 			buildConfigurations = (
 				34FFC1EE714F15F40EAE7A3AFF490D91 /* Debug */,
 				0CE09B2AADB60F068246068ACA57242A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2CBCE24382919CB3DBFC8BB3CC6503 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE705AA7F1E54FF7383C747F3AE5C8C /* Debug */,
+				FD955D09C8234320BDE1F0C7F1E6675F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1301,15 +1902,6 @@
 			buildConfigurations = (
 				91A3BB7C0922BE384B1AC86989164A30 /* Debug */,
 				1994253EDDB2BF68F8BBD7A273572B22 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEC44B987A368F3BCB319CF955399284 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5024DAD30BC6A79695B7ABA6EB0F1AE6 /* Debug */,
-				BFC1F2DC5DFAFD7DB4454F47112890D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

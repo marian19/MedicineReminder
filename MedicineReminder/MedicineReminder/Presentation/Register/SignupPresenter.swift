@@ -21,13 +21,13 @@ class SignupPresenter: SignupPresenterProtocol{
     
     // MARK: - SignupPresenterProtocol
     
-    func Signup(email: String, password: String) {
+    func signup(email: String, password: String) {
         if (email.isEmail) {
             
             if password.isValidPassword {
                 signupView?.showProgressBar()
                 
-                SignUpDataSource.init().Signup(email: email, password: password.sha1(), completionHandler: { [weak self] isSuccess in
+                SignUpDataSource.init().signup(email: email, password: password.sha1(), completionHandler: { [weak self] isSuccess in
                     DispatchQueue.main.async {
                         
                         self?.signupView?.hideProgressBar()

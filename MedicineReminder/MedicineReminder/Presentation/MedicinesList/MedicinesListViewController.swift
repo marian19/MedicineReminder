@@ -8,7 +8,7 @@
 
 import UIKit
 import MBProgressHUD
-
+import DZNEmptyDataSet
 
 class MedicinesListViewController: UIViewController {
 
@@ -25,6 +25,8 @@ class MedicinesListViewController: UIViewController {
         super.viewDidLoad()
         presenter = MedicinesListPresenter(view: self)
         presenter?.getMedicinesList()
+        self.tableView.tableFooterView = UIView.init()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,15 +54,6 @@ class MedicinesListViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        
-    }
-    
 
 }
 
@@ -82,6 +75,21 @@ extension MedicinesListViewController: UITableViewDataSource
     }
     
     
+}
+
+extension MedicinesListViewController: DZNEmptyDataSetSource{
+
+    func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "No medicine added yet"
+        let attrs = [NSFontAttributeName: UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)]
+        return NSAttributedString(string: str, attributes: attrs)
+    }
+    
+    func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "You can start adding medicines to be able to view them"
+        let attrs = [NSFontAttributeName: UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)]
+        return NSAttributedString(string: str, attributes: attrs)
+    }
 }
 
 // MARK: - MedicinesListViewProtocol
@@ -112,6 +120,7 @@ extension MedicinesListViewController: MedicinesListViewProtocol{
     
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
-        
+        self.progressView = nil
+
     }
 }

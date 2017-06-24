@@ -90,6 +90,7 @@ extension LoginViewController: LoginViewProtocol{
     
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
-        
+        self.progressView = nil
+
     }
 }

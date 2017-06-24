@@ -53,7 +53,7 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        presenter?.Signup(email: emailTextField.text!, password: passwordTextField.text!)
+        presenter?.signup(email: emailTextField.text!, password: passwordTextField.text!)
     }
 }
 // MARK: - SignupViewProtocol
@@ -83,6 +83,7 @@ extension SignupViewController: SignupViewProtocol{
     
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
-        
+        self.progressView = nil
+
     }
 }

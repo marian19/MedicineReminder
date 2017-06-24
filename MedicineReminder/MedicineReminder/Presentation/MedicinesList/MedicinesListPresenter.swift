@@ -17,7 +17,7 @@ class MedicinesListPresenter: MedicinesListPresenterProtocol{
         
     }
     
-    // MARK: - LoginPresenterProtocol
+    // MARK: - MedicinesListPresenterProtocol
     func getMedicinesList() {
         
         view?.showProgressBar()

@@ -9,7 +9,7 @@
 import Foundation
 struct SignUpDataSource {
     
-    func Signup(email: String, password: String, completionHandler:@escaping (Bool) -> Void){
+    func signup(email: String, password: String, completionHandler:@escaping (Bool) -> Void){
         DispatchQueue.global(qos: .background).async {
 
         let (_, isSuccess) = Nurse.addNurseWith(email: email, password: password)
