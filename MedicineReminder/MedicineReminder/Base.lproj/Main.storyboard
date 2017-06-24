@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Medicines List View Controller-->
         <scene sceneID="dkt-61-2zy">
             <objects>
-                <viewController id="wty-3d-dMj" sceneMemberID="viewController">
+                <viewController id="wty-3d-dMj" customClass="MedicinesListViewController" customModule="MedicineReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vYb-j3-4JC"/>
                         <viewControllerLayoutGuide type="bottom" id="ogf-j0-ajA"/>
@@ -21,21 +21,59 @@
                     <view key="view" contentMode="scaleToFill" id="D8L-jK-eDZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9RU-Zo-qDN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Cus-Hj-ouz">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cus-Hj-ouz" id="1PR-BZ-cPI">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wty-3d-dMj" id="fna-uS-Kua"/>
+                                    <outlet property="delegate" destination="wty-3d-dMj" id="ioO-6Z-hzG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9RU-Zo-qDN" secondAttribute="trailing" id="0tV-SL-Cnh"/>
+                            <constraint firstItem="9RU-Zo-qDN" firstAttribute="top" secondItem="vYb-j3-4JC" secondAttribute="bottom" constant="-64" id="7f8-h1-haw"/>
+                            <constraint firstItem="9RU-Zo-qDN" firstAttribute="leading" secondItem="D8L-jK-eDZ" secondAttribute="leading" id="S0R-RD-joB"/>
+                            <constraint firstItem="ogf-j0-ajA" firstAttribute="top" secondItem="9RU-Zo-qDN" secondAttribute="bottom" id="wKa-iU-qZm"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JRC-m6-24W">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="FbB-E5-KbQ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dhr-Tu-azj"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="FbB-E5-KbQ">
+                            <connections>
+                                <segue destination="cvJ-wH-5KM" kind="unwind" unwindAction="logoutWithSegue:" id="g21-Bc-8bA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dhr-Tu-azj">
+                            <connections>
+                                <action selector="addNewMedicine:" destination="wty-3d-dMj" id="hRL-dt-Py0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="9RU-Zo-qDN" id="9yE-uU-SMP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6W-jO-LZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cvJ-wH-5KM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1496.8" y="353.9730134932534"/>
+            <point key="canvasLocation" x="1496.25" y="353.87323943661971"/>
         </scene>
-        <!--View Controller-->
+        <!--Patients List View Controller-->
         <scene sceneID="srD-pN-Dpa">
             <objects>
-                <viewController id="FtJ-rM-nyQ" sceneMemberID="viewController">
+                <viewController id="FtJ-rM-nyQ" customClass="PatientsListViewController" customModule="MedicineReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Bx-dx-IFy"/>
                         <viewControllerLayoutGuide type="bottom" id="hcC-a5-VMm"/>
@@ -43,16 +81,50 @@
                     <view key="view" contentMode="scaleToFill" id="5GP-Yg-KVj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5TJ-na-BJu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="9rx-Qe-49C">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9rx-Qe-49C" id="dUS-NU-1GL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FtJ-rM-nyQ" id="xrP-R7-KER"/>
+                                    <outlet property="delegate" destination="FtJ-rM-nyQ" id="68L-jT-mB3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5TJ-na-BJu" secondAttribute="trailing" id="MKh-uL-08G"/>
+                            <constraint firstItem="5TJ-na-BJu" firstAttribute="top" secondItem="8Bx-dx-IFy" secondAttribute="bottom" constant="-64" id="VbX-xS-lV6"/>
+                            <constraint firstItem="hcC-a5-VMm" firstAttribute="top" secondItem="5TJ-na-BJu" secondAttribute="bottom" id="XdA-Et-ChG"/>
+                            <constraint firstItem="5TJ-na-BJu" firstAttribute="leading" secondItem="5GP-Yg-KVj" secondAttribute="leading" id="qz0-qr-FsB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pLH-Ic-asU">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="a8d-g9-jBz"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="a8d-g9-jBz">
+                            <connections>
+                                <segue destination="cP5-8b-RXD" kind="unwind" identifier="logout" unwindAction="logoutWithSegue:" id="EBX-TZ-ppV"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vz0-L0-zHv"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="5TJ-na-BJu" id="RdZ-4F-FRu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILq-3f-P6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cP5-8b-RXD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1496.8" y="-301.79910044977515"/>
+            <point key="canvasLocation" x="1496.25" y="-302.11267605633805"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="kme-Ij-KMV">
@@ -383,7 +455,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="7ef-G1-2GH">
             <objects>
-                <tabBarController id="agR-gU-lcy" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" id="agR-gU-lcy" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Del-Cu-3XB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

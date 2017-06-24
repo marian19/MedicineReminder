@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4645683FBD9F82AFB95F5B4D /* Pods_MedicineReminderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44DB1A24A9D87064330F03F /* Pods_MedicineReminderTests.framework */; };
+		56941BE41EFE9D1F0083431C /* LoginDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56941BE31EFE9D1F0083431C /* LoginDataSource.swift */; };
+		56941BE61EFE9F840083431C /* SignUpDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56941BE51EFE9F840083431C /* SignUpDataSource.swift */; };
+		56941BE81EFEA55F0083431C /* MedicinesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56941BE71EFEA55F0083431C /* MedicinesListPresenter.swift */; };
+		56941BEA1EFEA56B0083431C /* MedicinesListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56941BE91EFEA56B0083431C /* MedicinesListContract.swift */; };
+		56941BEE1EFEA6120083431C /* MedicinesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56941BED1EFEA6120083431C /* MedicinesListDataSource.swift */; };
+		56941BF21EFEB02F0083431C /* NewMedicineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56941BF11EFEB02F0083431C /* NewMedicineDataSource.swift */; };
 		56FA3DE41EFD5B8D00348266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3DE31EFD5B8D00348266 /* AppDelegate.swift */; };
 		56FA3DE91EFD5B8D00348266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FA3DE71EFD5B8D00348266 /* Main.storyboard */; };
 		56FA3DEC1EFD5B8D00348266 /* MedicineReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3DEA1EFD5B8D00348266 /* MedicineReminder.xcdatamodeld */; };
@@ -28,7 +34,6 @@
 		56FA3EB11EFD9BE700348266 /* PatientsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EB01EFD9BE700348266 /* PatientsListViewController.swift */; };
 		56FA3EB41EFD9C4000348266 /* MedicinesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EB31EFD9C4000348266 /* MedicinesListViewController.swift */; };
 		56FA3EB81EFDA5E700348266 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EB71EFDA5E700348266 /* LoginViewController.swift */; };
-		56FA3EBA1EFDB70200348266 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EB91EFDB70200348266 /* KeychainPasswordItem.swift */; };
 		56FA3EBC1EFDB88900348266 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EBB1EFDB88900348266 /* UIViewController+Extension.swift */; };
 		56FA3EBE1EFDB9E300348266 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EBD1EFDB9E300348266 /* LoginPresenter.swift */; };
 		56FA3EC01EFDB9F100348266 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FA3EBF1EFDB9F100348266 /* LoginContract.swift */; };
@@ -61,6 +66,12 @@
 		0A46CED6411F362E2171EC47 /* Pods-MedicineReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicineReminder/Pods-MedicineReminder.release.xcconfig"; sourceTree = "<group>"; };
 		32D7C6757076AA0F4FBD47B6 /* Pods-MedicineReminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicineReminderTests/Pods-MedicineReminderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4249CFEB026B404BD9944386 /* Pods-MedicineReminderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicineReminderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicineReminderUITests/Pods-MedicineReminderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56941BE31EFE9D1F0083431C /* LoginDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDataSource.swift; sourceTree = "<group>"; };
+		56941BE51EFE9F840083431C /* SignUpDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpDataSource.swift; sourceTree = "<group>"; };
+		56941BE71EFEA55F0083431C /* MedicinesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesListPresenter.swift; sourceTree = "<group>"; };
+		56941BE91EFEA56B0083431C /* MedicinesListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesListContract.swift; sourceTree = "<group>"; };
+		56941BED1EFEA6120083431C /* MedicinesListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesListDataSource.swift; sourceTree = "<group>"; };
+		56941BF11EFEB02F0083431C /* NewMedicineDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMedicineDataSource.swift; sourceTree = "<group>"; };
 		56FA3DE01EFD5B8C00348266 /* MedicineReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicineReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FA3DE31EFD5B8D00348266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56FA3DE81EFD5B8D00348266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,7 +98,6 @@
 		56FA3EB01EFD9BE700348266 /* PatientsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsListViewController.swift; sourceTree = "<group>"; };
 		56FA3EB31EFD9C4000348266 /* MedicinesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinesListViewController.swift; sourceTree = "<group>"; };
 		56FA3EB71EFDA5E700348266 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		56FA3EB91EFDB70200348266 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		56FA3EBB1EFDB88900348266 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		56FA3EBD1EFDB9E300348266 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		56FA3EBF1EFDB9F100348266 /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
@@ -191,9 +201,12 @@
 		56FA3E151EFD74A600348266 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				56FA3EB91EFDB70200348266 /* KeychainPasswordItem.swift */,
 				56FA3EA01EFD854500348266 /* CoreDataManager.swift */,
 				56FA3E161EFD74A600348266 /* Models */,
+				56941BE31EFE9D1F0083431C /* LoginDataSource.swift */,
+				56941BE51EFE9F840083431C /* SignUpDataSource.swift */,
+				56941BED1EFEA6120083431C /* MedicinesListDataSource.swift */,
+				56941BF11EFEB02F0083431C /* NewMedicineDataSource.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -247,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				56FA3EB31EFD9C4000348266 /* MedicinesListViewController.swift */,
+				56941BE71EFEA55F0083431C /* MedicinesListPresenter.swift */,
+				56941BE91EFEA56B0083431C /* MedicinesListContract.swift */,
 			);
 			path = MedicinesList;
 			sourceTree = "<group>";
@@ -588,16 +603,20 @@
 				56FA3EB41EFD9C4000348266 /* MedicinesListViewController.swift in Sources */,
 				56FA3EA91EFD8A2000348266 /* Medicine+CoreDataProperties.swift in Sources */,
 				56FA3E921EFD79E100348266 /* Nurse+CoreDataProperties.swift in Sources */,
-				56FA3EBA1EFDB70200348266 /* KeychainPasswordItem.swift in Sources */,
 				56FA3EBC1EFDB88900348266 /* UIViewController+Extension.swift in Sources */,
+				56941BEE1EFEA6120083431C /* MedicinesListDataSource.swift in Sources */,
 				56FA3EB81EFDA5E700348266 /* LoginViewController.swift in Sources */,
 				56FA3E951EFD79E100348266 /* Medicine.swift in Sources */,
 				56FA3EAC1EFD90F300348266 /* String+Validation.swift in Sources */,
+				56941BE41EFE9D1F0083431C /* LoginDataSource.swift in Sources */,
 				56FA3E931EFD79E100348266 /* Patient.swift in Sources */,
+				56941BE61EFE9F840083431C /* SignUpDataSource.swift in Sources */,
 				56FA3E971EFD79E100348266 /* PatientMedicine.swift in Sources */,
 				56FA3EC01EFDB9F100348266 /* LoginContract.swift in Sources */,
+				56941BE81EFEA55F0083431C /* MedicinesListPresenter.swift in Sources */,
 				56FA3E981EFD79E100348266 /* PatientMedicine+CoreDataProperties.swift in Sources */,
 				56FA3EA11EFD854500348266 /* CoreDataManager.swift in Sources */,
+				56941BF21EFEB02F0083431C /* NewMedicineDataSource.swift in Sources */,
 				56FA3EBE1EFDB9E300348266 /* LoginPresenter.swift in Sources */,
 				56FA3E941EFD79E100348266 /* Patient+CoreDataProperties.swift in Sources */,
 				56FA3EC61EFDCA6E00348266 /* String+Encryption.swift in Sources */,
@@ -605,6 +624,7 @@
 				56FA3ECE1EFDD14700348266 /* SignupContract.swift in Sources */,
 				56FA3DEC1EFD5B8D00348266 /* MedicineReminder.xcdatamodeld in Sources */,
 				56FA3EB11EFD9BE700348266 /* PatientsListViewController.swift in Sources */,
+				56941BEA1EFEA56B0083431C /* MedicinesListContract.swift in Sources */,
 				56FA3ED01EFDD14700348266 /* SignupViewController.swift in Sources */,
 				56FA3DE41EFD5B8D00348266 /* AppDelegate.swift in Sources */,
 			);

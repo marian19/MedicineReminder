@@ -11,25 +11,7 @@ import CoreData
 
 @objc(Nurse)
 public class Nurse: NSManagedObject {
-    
-//    public class func getNurseWith(email:String) -> Nurse? {
-//        
-//        let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext
-//        var nurse: Nurse?
-//        do {
-//            let fetchRequest : NSFetchRequest<Nurse> = Nurse.fetchRequest()
-//            fetchRequest.predicate = NSPredicate(format: "email == %@", email)
-//            let fetchedResults = try managedObjectContext.fetch(fetchRequest)
-//            if fetchedResults.first != nil {
-//                nurse = fetchedResults.first
-//            }
-//        }
-//        catch {
-//            print ("fetch task failed", error)
-//        }
-//        return nurse
-//    }
-//    
+     
     public class func getNurseWith(email:String, password: String = "") -> Nurse? {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext

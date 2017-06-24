@@ -7,9 +7,19 @@
 //
 
 import UIKit
+import MBProgressHUD
+
 
 class PatientsListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Class Properties
+    
+    var progressView : MBProgressHUD?
+//    var presenter : MedicinesListPresenterProtocol?
+    var Patients = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,3 +43,23 @@ class PatientsListViewController: UIViewController {
     */
 
 }
+
+extension PatientsListViewController: UITableViewDataSource
+{
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return Patients.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = Patients[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    
+}
+

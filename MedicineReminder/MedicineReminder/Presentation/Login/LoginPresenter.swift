@@ -21,18 +21,27 @@ class LoginPresenter: LoginPresenterProtocol{
     func login(email: String, password: String) {
         
         if (email.isEmail) {
-        
+            
             if password.isValidPassword {
                 
                 loginView?.showProgressBar()
-                let nurse = Nurse.getNurseWith(email: email, password: password.sha1())
-                loginView?.hideProgressBar()
-                if nurse == nil {
-                    loginView?.showErrorMsg(msg: "Incorrect user name or password")
+                
+                LoginDataSource.init().login(email: email, password: password.sha1(), completionHandler: { [weak self] nurse in
+                    DispatchQueue.main.async {
+
+                    self?.loginView?.hideProgressBar()
                     
-                }else{
-                    loginView?.success()
-                }
+                    if nurse == nil {
+                        self?.loginView?.showErrorMsg(msg: "Incorrect user name or password")
+                        
+                    }else{
+                        let userDefaults = UserDefaults.standard
+                        userDefaults.set( email, forKey: "email")
+                        
+                        self?.loginView?.success()
+                    }
+                    }
+                })
                 
             }else{
                 loginView?.showErrorMsg(msg: "Invalid password")

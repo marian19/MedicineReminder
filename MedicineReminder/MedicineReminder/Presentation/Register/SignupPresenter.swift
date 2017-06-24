@@ -26,15 +26,21 @@ class SignupPresenter: SignupPresenterProtocol{
             
             if password.isValidPassword {
                 signupView?.showProgressBar()
-                let (_, isSuccess) = Nurse.addNurseWith(email: email, password: password.sha1())
-                signupView?.hideProgressBar()
-                if isSuccess {
-                    signupView?.success(msg: "Account has been added successfully")
-                }else{
-                    
-                    signupView?.showErrorMsg(msg: "Email already exists")
-                    
-                }
+                
+                SignUpDataSource.init().Signup(email: email, password: password.sha1(), completionHandler: { [weak self] isSuccess in
+                    DispatchQueue.main.async {
+                        
+                        self?.signupView?.hideProgressBar()
+                        if isSuccess {
+                            self?.signupView?.success(msg: "Account has been added successfully")
+                        }else{
+                            
+                            self?.signupView?.showErrorMsg(msg: "Email already exists")
+                            
+                        }
+                    }
+                })
+                
             }else{
                 signupView?.showErrorMsg(msg: "Invalid password")
                 

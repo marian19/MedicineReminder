@@ -13,7 +13,7 @@ import MBProgressHUD
 class LoginViewController: UIViewController {
     
     // MARK: - IBOutlet
-
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var passwordTextField: HoshiTextField!
     @IBOutlet weak var emailTextField: HoshiTextField!
@@ -27,7 +27,31 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         presenter = LoginPresenter(view: self)
-
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let userDefaults = UserDefaults.standard
+        
+        let email = userDefaults.string(forKey: "email")
+        if email != nil {
+            self.scrollView.isHidden = true
+        } else {
+            self.scrollView.isHidden = false
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let userDefaults = UserDefaults.standard
+        let email = userDefaults.string(forKey: "email")
+        if email != nil {
+            self.performSegue(withIdentifier: "successLogin", sender: self)
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,6 +64,11 @@ class LoginViewController: UIViewController {
         presenter?.login(email: emailTextField.text!, password: passwordTextField.text!)
     }
     
+    @IBAction func logout(segue:UIStoryboardSegue) {
+        
+        let userDefaults = UserDefaults.standard
+        userDefaults.set( nil, forKey: "email")
+    }
 }
 
 // MARK: - SignupViewProtocol
@@ -48,7 +77,7 @@ extension LoginViewController: LoginViewProtocol{
     
     func success(){
         self.performSegue(withIdentifier: "successLogin", sender: self)
-       
+        
     }
     
     func showErrorMsg(msg : String){
