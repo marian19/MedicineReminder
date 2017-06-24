@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Medicine" representedClassName="Medicine" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Nurse" representedClassName="Nurse" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="patients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Patient" inverseName="nurse" inverseEntity="Patient" syncable="YES"/>
+    </entity>
+    <entity name="Patient" representedClassName="Patient" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="medicines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PatientMedicine" inverseName="patient" inverseEntity="PatientMedicine" syncable="YES"/>
+        <relationship name="nurse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nurse" inverseName="patients" inverseEntity="Nurse" syncable="YES"/>
+    </entity>
+    <entity name="PatientMedicine" representedClassName="PatientMedicine" syncable="YES">
+        <attribute name="dosage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="patient" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Patient" inverseName="medicines" inverseEntity="Patient" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Medicine" positionX="-36" positionY="9" width="128" height="60"/>
+        <element name="Nurse" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Patient" positionX="-54" positionY="0" width="128" height="120"/>
+        <element name="PatientMedicine" positionX="-27" positionY="54" width="128" height="120"/>
+    </elements>
+</model>
