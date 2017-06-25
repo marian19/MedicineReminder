@@ -10,6 +10,7 @@ import Foundation
 
 extension String {
     
+    // encrypt a string
     func sha1() -> String {
         let data = self.data(using: String.Encoding.utf8)!
         var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
@@ -20,9 +21,4 @@ extension String {
         return hexBytes.joined()
     }
     
-    func toDate(format: String) -> Date {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        return dateFormatter.date(from: self)!
-    }
 }

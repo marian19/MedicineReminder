@@ -17,9 +17,9 @@ class AddPatientPresenter: AddPatientPresenterProtocol{
         
     }
     
-    // MARK: - PatientsListPresenterProtocol
+    // MARK: - AddPatientPresenterProtocol implementation
+    
     func addPatientToCurrentNurseWith(email:String, name: String, phone: String){
-        
         
         if (email.isEmail) {
             
@@ -33,15 +33,14 @@ class AddPatientPresenter: AddPatientPresenterProtocol{
                     view?.showProgressBar()
                     
                     AddPatientDataSource.init().addPatientToCurrentNurseWith(email: email, name: name, phone: phone, nurseEmail: nurseEmail!, completionHandler: { [weak self] isSuccess in
+                        
                         DispatchQueue.main.async {
                             
                             self?.view?.hideProgressBar()
                             if isSuccess {
                                 self?.view?.successWith(msg: "Patient has been added successfully")
                             }else{
-                                
-                                self?.view?.showErrorMsg(msg: "Email already exists")
-                                
+                                self?.view?.showErrorMsg(msg: "Patient already exists and is associated to another nurse")
                             }
                         }
                     })
@@ -58,9 +57,5 @@ class AddPatientPresenter: AddPatientPresenterProtocol{
             view?.showErrorMsg(msg: "Invalid email")
             
         }
-        
-        
     }
-    
-    
 }

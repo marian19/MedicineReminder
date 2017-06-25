@@ -8,30 +8,34 @@
 
 import UIKit
 import DZNEmptyDataSet
+import MBProgressHUD
 
 class PatientViewController: UIViewController {
+    
+    // MARK: - IBOutlet
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var phoneLable: UILabel!
     @IBOutlet weak var tableView: UITableView!
-
+    
+    // MARK: - Class Properties
     
     var patient: Patient?
     var medicines = [PatientMedicine]()
+    var progressView : MBProgressHUD?
+    var presenter : PatientMedicinesPresenterProtocol?
+    
+    // MARK: - Class methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.tableFooterView = UIView.init()
-
-        let addButton   = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self,action:#selector(addMedicine))
-        self.navigationItem.rightBarButtonItem = addButton
-        
-        nameLabel.text = patient?.name
-        emailLabel.text = patient?.email
-        phoneLable.text = patient?.phone
-        
-        medicines = patient?.medicines?.allObjects as! [PatientMedicine]
+        setupViewController()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getPatientMedicinesList()
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,23 +43,44 @@ class PatientViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func addMedicine(sender: UIBarButtonItem) {
+    func setupViewController()  {
         
+        self.tableView.tableFooterView = UIView.init()
+        presenter = PatientPresenter(view: self)
+        
+        // add addbutton to navigationItem
+        let addButton   = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self,action:#selector(addMedicine))
+        self.navigationItem.rightBarButtonItem = addButton
+        
+        // set patient info
+        nameLabel.text = patient?.name
+        emailLabel.text = patient?.email
+        phoneLable.text = patient?.phone
+    }
+    
+    func getPatientMedicinesList(){
+        presenter?.getMedicinesForPatient(email: (patient?.email)!)
+    }
+    
+    // rightBarButtonItem "add" selector
+    func addMedicine(sender: UIBarButtonItem) {
         self.performSegue(withIdentifier: "addMedicine", sender: sender)
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addMedicine" {
+            
+            // pass the selected patient to the AddMedicineViewController
+            let addMedicineViewController = segue.destination as! AddMedicineViewController
+            addMedicineViewController.patient = patient
+        }
+    }
 }
 
+// MARK: -  DZNEmptyDataSetSource implementation
 
 extension PatientViewController: DZNEmptyDataSetSource{
     
@@ -72,7 +97,16 @@ extension PatientViewController: DZNEmptyDataSetSource{
     }
 }
 
+// MARK: -  UITableViewDataSource implementation
+
 extension PatientViewController: UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Patient Medicines"
+    }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return medicines.count
@@ -80,12 +114,44 @@ extension PatientViewController: UITableViewDataSource{
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = medicines[indexPath.row].medicine?.name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PatientMedicineTableViewCell
+        
+        cell.nameLabel.text = medicines[indexPath.row].medicine?.name
+        let date: Date = medicines[indexPath.row].time! as Date
+        cell.dateLabel.text = date.toString(format: "MMMM dd yyyy hh:mm aa")
+        cell.doseLabel.text = medicines[indexPath.row].dosage
+        cell.priorityLabel.text = medicines[indexPath.row].priority
         
         return cell
         
     }
     
     
+}
+
+// MARK: -  PatientMedicinesViewProtocol implementation
+
+extension PatientViewController: PatientMedicinesViewProtocol{
+    
+    func successWith(medicines: [PatientMedicine]){
+        
+        self.medicines = medicines
+        self.tableView.reloadData()
+        
+    }
+    
+    
+    func showErrorMsg(msg : String){
+        alert(message: msg)
+    }
+    func showProgressBar(){
+        progressView = self.showGlobalProgressHUDWithTitle(view: self.view, title: nil)
+        
+    }
+    
+    func hideProgressBar(){
+        self.progressView!.hide(animated: false)
+        self.progressView = nil
+        
+    }
 }

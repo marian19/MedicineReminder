@@ -11,6 +11,7 @@ import Foundation
 protocol LoginPresenterProtocol : class{
     
     func login(email: String, password: String)
+    func logout()
 }
 
 protocol LoginViewProtocol : class{

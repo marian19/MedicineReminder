@@ -12,6 +12,9 @@ import DZNEmptyDataSet
 
 class PatientsListViewController: UIViewController {
     
+    
+    // MARK: - IBOutlet
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Class Properties
@@ -20,10 +23,11 @@ class PatientsListViewController: UIViewController {
     var presenter : PatientsListPresenterProtocol?
     var patients = [Patient]()
     
+    // MARK: - Class methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = PatientsListPresenter.init(view: self)
-        self.tableView.tableFooterView = UIView.init()
+        setupViewController()
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,17 +36,25 @@ class PatientsListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        getPatientList()
+    }
+    
+    private func setupViewController()  {
+        presenter = PatientsListPresenter.init(view: self)
+        self.tableView.tableFooterView = UIView.init()
+    }
+    
+    private func getPatientList() {
         presenter?.getPatientsListForCurrentNurse()
+        
     }
     
     // MARK: - Navigation
     
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "patientInfo" {
-            
+            // pass the selected patient to the PatientViewController
             if let indexPath = tableView.indexPathForSelectedRow {
                 let patiantViewController = segue.destination as! PatientViewController
                 patiantViewController.patient = patients[indexPath.row]
@@ -53,6 +65,8 @@ class PatientsListViewController: UIViewController {
     
     
 }
+
+// MARK: -  DZNEmptyDataSetSource implementation
 
 extension PatientsListViewController: DZNEmptyDataSetSource{
     
@@ -68,6 +82,8 @@ extension PatientsListViewController: DZNEmptyDataSetSource{
         return NSAttributedString(string: str, attributes: attrs)
     }
 }
+
+// MARK: -  UITableViewDataSource implementation
 
 extension PatientsListViewController: UITableViewDataSource{
     
@@ -86,6 +102,8 @@ extension PatientsListViewController: UITableViewDataSource{
     
     
 }
+
+// MARK: -  PatientsListViewProtocol implementation
 
 extension PatientsListViewController: PatientsListViewProtocol{
     

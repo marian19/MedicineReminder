@@ -12,6 +12,7 @@ import CoreData
 @objc(Medicine)
 public class Medicine: NSManagedObject {
     
+    //  get all medicines list
     public class func getAllMedicines() -> [Medicine]? {
         
         var medicines = [Medicine]()
@@ -29,6 +30,7 @@ public class Medicine: NSManagedObject {
         return medicines
     }
     
+    // get medicine object with name
     public class func getMedicineWith(name:String) -> Medicine? {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext
@@ -50,6 +52,7 @@ public class Medicine: NSManagedObject {
         return medicine
     }
     
+    // add new medicine
     public class func addMedicineWith(name:String) -> (Medicine ,Bool) {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext

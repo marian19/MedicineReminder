@@ -20,38 +20,26 @@ class LoginViewController: UIViewController {
     
     // MARK: - Class Properties
     
-    var progressView : MBProgressHUD?
-    var presenter : LoginPresenterProtocol?
+    var progressView: MBProgressHUD?
+    var presenter: LoginPresenterProtocol?
+    var nurseEmail: String?
+    
+    // MARK: - Class methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
-        presenter = LoginPresenter(view: self)
-        
+        setupViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let userDefaults = UserDefaults.standard
-        
-        let email = userDefaults.string(forKey: "email")
-        if email != nil {
-            self.scrollView.isHidden = true
-        } else {
-            self.scrollView.isHidden = false
-        }
+        hideViewIfUserLoggedInBefore()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        goToHomeScreenIfUserLoggedInBefore()
         
-        let userDefaults = UserDefaults.standard
-        let email = userDefaults.string(forKey: "email")
-        if email != nil {
-            self.performSegue(withIdentifier: "successLogin", sender: self)
-            
-        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,19 +47,42 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    private func setupViewController()  {
+        hideKeyboardWhenTappedAround()
+        presenter = LoginPresenter(view: self)
+        let userDefaults = UserDefaults.standard
+        nurseEmail = userDefaults.string(forKey: "email")
+        
+    }
+    
+    private func hideViewIfUserLoggedInBefore(){
+        if nurseEmail != nil {
+            self.scrollView.isHidden = true
+        } else {
+            self.scrollView.isHidden = false
+        }
+    }
+    
+    private func goToHomeScreenIfUserLoggedInBefore(){
+        
+        if nurseEmail != nil {
+            self.performSegue(withIdentifier: "successLogin", sender: self)
+            
+        }
+    }
+    
+    // MARK: - @IBAction
     
     @IBAction func signIn(_ sender: Any) {
         presenter?.login(email: emailTextField.text!, password: passwordTextField.text!)
     }
     
     @IBAction func logout(segue:UIStoryboardSegue) {
-        
-        let userDefaults = UserDefaults.standard
-        userDefaults.set( nil, forKey: "email")
+        presenter?.logout()
     }
 }
 
-// MARK: - SignupViewProtocol
+// MARK: - LoginViewProtocol implementation
 
 extension LoginViewController: LoginViewProtocol{
     
@@ -91,6 +102,6 @@ extension LoginViewController: LoginViewProtocol{
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
         self.progressView = nil
-
+        
     }
 }

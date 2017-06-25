@@ -2,7 +2,7 @@
 //  PatientMedicine+CoreDataProperties.swift
 //  
 //
-//  Created by Marian on 6/24/17.
+//  Created by Marian on 6/25/17.
 //
 //
 
@@ -16,10 +16,11 @@ extension PatientMedicine {
         return NSFetchRequest<PatientMedicine>(entityName: "PatientMedicine")
     }
 
-    @NSManaged public var dosage: Double
-    @NSManaged public var priority: Int16
+    @NSManaged public var dosage: String?
+    @NSManaged public var priority: String?
     @NSManaged public var time: NSDate?
-    @NSManaged public var patient: Patient?
+    @NSManaged public var uuid: String?
     @NSManaged public var medicine: Medicine?
+    @NSManaged public var patient: Patient?
 
 }

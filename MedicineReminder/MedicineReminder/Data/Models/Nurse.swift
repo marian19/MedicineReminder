@@ -11,7 +11,8 @@ import CoreData
 
 @objc(Nurse)
 public class Nurse: NSManagedObject {
-     
+    
+    // get Nurse with email or with email and password
     public class func getNurseWith(email:String, password: String = "") -> Nurse? {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext
@@ -21,12 +22,11 @@ public class Nurse: NSManagedObject {
             
             if password.isBlank {
                 fetchRequest.predicate = NSPredicate(format: "email LIKE[cd] %@", email)
-
             }else{
                 fetchRequest.predicate = NSPredicate(format: "email LIKE[cd] %@ AND password == %@", email,password)
-
             }
             let fetchedResults = try managedObjectContext.fetch(fetchRequest)
+            
             if fetchedResults.first != nil {
                 nurse = fetchedResults.first
             }
@@ -37,6 +37,9 @@ public class Nurse: NSManagedObject {
         return nurse
     }
     
+    
+    // add new Nurse "Sign up"
+
     public class func addNurseWith(email:String, password: String) -> (Nurse, Bool) {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext

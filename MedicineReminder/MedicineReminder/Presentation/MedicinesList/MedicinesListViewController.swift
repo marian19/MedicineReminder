@@ -11,7 +11,9 @@ import MBProgressHUD
 import DZNEmptyDataSet
 
 class MedicinesListViewController: UIViewController {
-
+    
+    // MARK: - IBOutlet
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Class Properties
@@ -19,22 +21,28 @@ class MedicinesListViewController: UIViewController {
     var progressView : MBProgressHUD?
     var presenter : MedicinesListPresenterProtocol?
     var medicines = [Medicine]()
-
+    
+    // MARK: - Class methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = MedicinesListPresenter(view: self)
-        presenter?.getMedicinesList()
-        self.tableView.tableFooterView = UIView.init()
-
+       setupViewController()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    func setupViewController()  {
+        presenter = MedicinesListPresenter(view: self)
+        presenter?.getMedicinesList()
+        self.tableView.tableFooterView = UIView.init()
+    }
+    
+    // MARK: - @IBAction
+    
     @IBAction func addNewMedicine(_ sender: Any) {
         
         let alertController = UIAlertController(title: "New Medicine", message: nil, preferredStyle: UIAlertControllerStyle.alert)
@@ -45,21 +53,22 @@ class MedicinesListViewController: UIViewController {
         let okAction = UIAlertAction(title: "Add", style: .default) {[weak self] (result : UIAlertAction) -> Void in
             
             let medicineName = alertController.textFields?.last?.text
+            // add new medicine
             self?.presenter?.addNewMedicine(name: medicineName!)
             alertController.dismiss(animated: true, completion: nil)
-
+            
         }
         alertController.addAction(cancelAction)
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }
     
-
+    
 }
 
+// MARK: -  UITableViewDataSource implementation
 
-extension MedicinesListViewController: UITableViewDataSource
-{
+extension MedicinesListViewController: UITableViewDataSource{
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return medicines.count
@@ -71,14 +80,14 @@ extension MedicinesListViewController: UITableViewDataSource
         cell.textLabel?.text = medicines[indexPath.row].name
         
         return cell
-        
     }
-    
     
 }
 
-extension MedicinesListViewController: DZNEmptyDataSetSource{
+// MARK: -  DZNEmptyDataSetSource implementation
 
+extension MedicinesListViewController: DZNEmptyDataSetSource{
+    
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
         let str = "No medicine added yet"
         let attrs = [NSFontAttributeName: UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)]
@@ -92,22 +101,24 @@ extension MedicinesListViewController: DZNEmptyDataSetSource{
     }
 }
 
-// MARK: - MedicinesListViewProtocol
+// MARK: - MedicinesListViewProtocol implementation
 
 extension MedicinesListViewController: MedicinesListViewProtocol{
     
+    // medicines: is the all medicines list
     func successWith(medicines: [Medicine]){
         
-            self.medicines = medicines
-            self.tableView.reloadData()
+        self.medicines = medicines
+        self.tableView.reloadData()
         
     }
     
+    // medicine: is the new added medicine
     func successWith(medicine: Medicine,msg: String){
         self.medicines.append(medicine)
         self.tableView.reloadData()
-    self.alert(message: msg)
-    
+        self.alert(message: msg)
+        
     }
     
     func showErrorMsg(msg : String){
@@ -121,6 +132,6 @@ extension MedicinesListViewController: MedicinesListViewProtocol{
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
         self.progressView = nil
-
+        
     }
 }

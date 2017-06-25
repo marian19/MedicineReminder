@@ -2,7 +2,7 @@
 //  Patient+CoreDataProperties.swift
 //  
 //
-//  Created by Marian on 6/24/17.
+//  Created by Marian on 6/25/17.
 //
 //
 

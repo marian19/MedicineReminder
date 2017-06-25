@@ -61,10 +61,17 @@ extension String {
     //validate PhoneNumber
     var isPhoneNumber: Bool {
         
-        let charcterSet  = NSCharacterSet(charactersIn: "+0123456789").inverted
-        let inputString = self.components(separatedBy: charcterSet)
-        let filtered = inputString.joined(separator: "")
-        return  self == filtered
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
+            let matches = detector.matches(in: self, options: [], range: NSMakeRange(0, self.characters.count))
+            if let res = matches.first {
+                return res.resultType == .phoneNumber && res.range.location == 0 && res.range.length == self.characters.count
+            } else {
+                return false
+            }
+        } catch {
+            return false
+        }
         
     }
 }

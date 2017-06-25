@@ -1,5 +1,5 @@
 //
-//  PatientsListPresenterProtocol.swift
+//  PatientContract.swift
 //  MedicineReminder
 //
 //  Created by Marian on 6/24/17.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol PatientsListPresenterProtocol : class{
+protocol PatientMedicinesPresenterProtocol : class{
     
-    func getPatientsListForCurrentNurse()
+    func getMedicinesForPatient(email: String)
 }
 
-protocol PatientsListViewProtocol : class{
-
-    func successWith(patients: [Patient])
+protocol PatientMedicinesViewProtocol : class{
+    
+    func successWith(medicines: [PatientMedicine])
     func showErrorMsg(msg: String)
     func showProgressBar()
     func hideProgressBar()

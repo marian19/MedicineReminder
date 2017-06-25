@@ -20,6 +20,7 @@ class PatientsListPresenter: PatientsListPresenterProtocol{
     // MARK: - PatientsListPresenterProtocol
     func getPatientsListForCurrentNurse() {
         
+        //get email for the logged in nurse
         let userDefaults = UserDefaults.standard
         let email = userDefaults.string(forKey: "email")
         

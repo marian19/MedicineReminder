@@ -24,29 +24,26 @@ class SignupViewController: UIViewController {
     var presenter : SignupPresenterProtocol?
     
     
+    // MARK: - Class methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
-        presenter = SignupPresenter(view: self)
-        
-        
+        setupViewController()
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    private func setupViewController()  {
+        hideKeyboardWhenTappedAround()
+        presenter = SignupPresenter(view: self)
+    }
     
+    
+    // MARK: - @IBAction
     
     @IBAction func cancelSignUp(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
@@ -56,12 +53,13 @@ class SignupViewController: UIViewController {
         presenter?.signup(email: emailTextField.text!, password: passwordTextField.text!)
     }
 }
-// MARK: - SignupViewProtocol
+
+
+// MARK: -  SignupViewProtocol implementation
 
 extension SignupViewController: SignupViewProtocol{
     
     func success(msg : String){
-        //        alert(message: msg)
         
         let alertController = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "OK", style: .default) {
@@ -76,6 +74,7 @@ extension SignupViewController: SignupViewProtocol{
     func showErrorMsg(msg : String){
         alert(message: msg)
     }
+    
     func showProgressBar(){
         progressView = self.showGlobalProgressHUDWithTitle(view: self.view, title: nil)
         
@@ -84,6 +83,6 @@ extension SignupViewController: SignupViewProtocol{
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
         self.progressView = nil
-
+        
     }
 }

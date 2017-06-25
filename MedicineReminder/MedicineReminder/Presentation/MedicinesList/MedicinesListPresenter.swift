@@ -17,7 +17,7 @@ class MedicinesListPresenter: MedicinesListPresenterProtocol{
         
     }
     
-    // MARK: - MedicinesListPresenterProtocol
+    // MARK: - MedicinesListPresenterProtocol imblementation
     func getMedicinesList() {
         
         view?.showProgressBar()
@@ -36,6 +36,7 @@ class MedicinesListPresenter: MedicinesListPresenterProtocol{
         view?.showProgressBar()
         
         NewMedicineDataSource.init().addMedicineWith(name: name,completionHandler: { [weak self] medicine,isSuccess in
+            
             DispatchQueue.main.async {
                 
                 self?.view?.hideProgressBar()
@@ -45,7 +46,8 @@ class MedicinesListPresenter: MedicinesListPresenterProtocol{
                     
                     self?.view?.showErrorMsg(msg: "Medicine already exists")
                     
-                }            }
+                }
+            }
             
         })
         

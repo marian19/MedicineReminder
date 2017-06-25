@@ -3,7 +3,7 @@
 //  RMS
 //
 //  Created by Marian on 1/17/17.
-//  Copyright © 2017 mohamed salah. All rights reserved.
+//  Copyright © 2017 Marian. All rights reserved.
 //
 
 import UIKit

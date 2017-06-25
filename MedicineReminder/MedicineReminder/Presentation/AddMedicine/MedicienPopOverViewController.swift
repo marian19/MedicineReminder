@@ -10,51 +10,54 @@ import UIKit
 import DZNEmptyDataSet
 import MBProgressHUD
 
-protocol MedicienPopOverViewControllerDelegate{
+
+protocol MedicienPopOverViewControllerDelegate: class{
     func choosenMedicine(medicine: Medicine?)
 }
 
 
 class MedicienPopOverViewController: UIViewController {
     
-    var delegate : MedicienPopOverViewControllerDelegate?
+    // MARK: - IBOutlet
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Class Properties
+    
+    weak var delegate : MedicienPopOverViewControllerDelegate?
     var progressView : MBProgressHUD?
     var presenter : MedicinesListPresenterProtocol?
     var medicines = [Medicine]()
     
-    
-    @IBOutlet weak var tableView: UITableView!
+    // MARK: - Class methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        presenter = MedicinesListPresenter(view: self)
-        presenter?.getMedicinesList()
-        self.tableView.tableFooterView = UIView.init()    }
+        setupViewController()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func cancelButtonTouchUpInside(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-        
+    
+    func setupViewController()  {
+        presenter = MedicinesListPresenter(view: self)
+        presenter?.getMedicinesList()
+        self.tableView.tableFooterView = UIView.init()
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - @IBAction
+    
+    @IBAction func cancelButtonTouchUpInside(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
 
-extension MedicienPopOverViewController: UITableViewDataSource,UITableViewDelegate
-{
+// MARK: -  UITableViewDataSource,UITableViewDelegate implementation
+
+extension MedicienPopOverViewController: UITableViewDataSource,UITableViewDelegate{
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return medicines.count
@@ -89,6 +92,8 @@ extension MedicienPopOverViewController: UITableViewDataSource,UITableViewDelega
     
 }
 
+// MARK: -  DZNEmptyDataSetSource implementation
+
 extension MedicienPopOverViewController: DZNEmptyDataSetSource{
     
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
@@ -104,36 +109,32 @@ extension MedicienPopOverViewController: DZNEmptyDataSetSource{
     }
 }
 
-// MARK: - MedicinesListViewProtocol
+// MARK: - MedicinesListViewProtocol implementation
 
 extension MedicienPopOverViewController: MedicinesListViewProtocol{
     
     func successWith(medicines: [Medicine]){
-        
         self.medicines = medicines
         self.tableView.reloadData()
-        
     }
     
     func successWith(medicine: Medicine,msg: String){
         self.medicines.append(medicine)
         self.tableView.reloadData()
         self.alert(message: msg)
-        
     }
     
     func showErrorMsg(msg : String){
         alert(message: msg)
     }
+    
     func showProgressBar(){
         progressView = self.showGlobalProgressHUDWithTitle(view: self.view, title: nil)
-        
     }
     
     func hideProgressBar(){
         self.progressView!.hide(animated: false)
         self.progressView = nil
-        
     }
 }
 

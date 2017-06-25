@@ -10,43 +10,47 @@ import Foundation
 
 class SignupPresenter: SignupPresenterProtocol{
     
-    
-    
-    weak var signupView: SignupViewProtocol?
+    weak var view: SignupViewProtocol?
     
     required init(view: SignupViewProtocol) {
-        self.signupView = view
-        
+        self.view = view
     }
     
-    // MARK: - SignupPresenterProtocol
+    // MARK: - SignupPresenterProtocol implementaion
     
     func signup(email: String, password: String) {
+        
+        // validate email
+        
         if (email.isEmail) {
             
+            // validate password
+            
             if password.isValidPassword {
-                signupView?.showProgressBar()
+                
+                view?.showProgressBar()
                 
                 SignUpDataSource.init().signup(email: email, password: password.sha1(), completionHandler: { [weak self] isSuccess in
+                    
                     DispatchQueue.main.async {
                         
-                        self?.signupView?.hideProgressBar()
+                        self?.view?.hideProgressBar()
                         if isSuccess {
-                            self?.signupView?.success(msg: "Account has been added successfully")
+                            self?.view?.success(msg: "Account has been added successfully")
                         }else{
                             
-                            self?.signupView?.showErrorMsg(msg: "Email already exists")
+                            self?.view?.showErrorMsg(msg: "Email already exists")
                             
                         }
                     }
                 })
                 
             }else{
-                signupView?.showErrorMsg(msg: "Invalid password")
+                view?.showErrorMsg(msg: "Invalid password")
                 
             }
         }else{
-            signupView?.showErrorMsg(msg: "Invalid email")
+            view?.showErrorMsg(msg: "Invalid email")
         }
         
     }

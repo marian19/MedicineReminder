@@ -9,16 +9,6 @@
 import CoreData
 final class CoreDataManager {
     
-//    // MARK: - Properties
-//    
-//    private let modelName: String
-//    
-//    // MARK: - Initialization
-//    
-//    init(modelName: String) {
-//        self.modelName = modelName
-//    }
-    
     static let sharedInstance = CoreDataManager()
     
     private init() {
@@ -37,6 +27,7 @@ final class CoreDataManager {
     
     private lazy var managedObjectModel: NSManagedObjectModel = {
         guard let modelURL = Bundle.main.url(forResource: "MedicineReminder", withExtension: "momd") else {
+            
             fatalError("Unable to Find Data Model")
         }
         
@@ -63,10 +54,25 @@ final class CoreDataManager {
                                                               at: persistentStoreURL,
                                                               options: nil)
         } catch {
-            fatalError("Unable to Load Persistent Store")
+            let nserror = error as NSError
+            print(nserror.userInfo)
         }
         
         return persistentStoreCoordinator
     }()
     
+    
+    // MARK: - Core Data Saving support
+    
+        func saveContext () {
+            if managedObjectContext.hasChanges {
+                do {
+                    try managedObjectContext.save()
+                } catch {
+                   
+                    let nserror = error as NSError
+                    print(nserror.userInfo)
+                }
+            }
+        }
 }

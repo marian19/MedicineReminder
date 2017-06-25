@@ -14,35 +14,39 @@ import ActionSheetPicker_3_0
 
 class AddMedicineViewController: UIViewController {
     
+    // MARK: - IBOutlet
     
     @IBOutlet weak var medicineTextField: HoshiTextField!
     @IBOutlet weak var timeTextField: HoshiTextField!
     @IBOutlet weak var priorityTextField: HoshiTextField!
     @IBOutlet weak var dosageTextField: HoshiTextField!
     
+    // MARK: - Class Properties
     
-    var selectedMedicine :Medicine?
-    var selectedDosageType :String = "pills"
+    var progressView: MBProgressHUD?
+    var presenter: AddMedicinePresenterProtocol?
+    var patient: Patient?
+    var selectedMedicine: Medicine?
+    var selectedDosageType: String? = "pills"
+    var selectedDosage: String?
     var selectedtime :Date?
-    var selectedPriority :Int = 0
+    
+    // MARK: - Class methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        setupViewController()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func selectedDosageButton(_ sender: DLRadioButton) {
-        selectedDosageType = (sender.selected()?.titleLabel?.text)!
-        
+    func setupViewController()  {
+        presenter = AddMedicinePresenter.init(view: self)
     }
     
-    
+    // medicine list popover view controller
     func showPopOverViewController(textField: UITextField) {
         let popController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MedicienPopOverViewController") as! MedicienPopOverViewController
         
@@ -60,15 +64,14 @@ class AddMedicineViewController: UIViewController {
     }
     
     func showDatePicker(textField: UITextField) {
-        let datePicker = ActionSheetDatePicker(title: "Date:", datePickerMode: UIDatePickerMode.dateAndTime, selectedDate: Date(), target: self, action:#selector(datePicked(date:)), origin: textField)
+        weak  var  datePicker = ActionSheetDatePicker(title: "Date:", datePickerMode: UIDatePickerMode.dateAndTime, selectedDate: Date(), target: self, action:#selector(datePicked(date:)), origin: textField)
         datePicker?.show()
     }
     
     func showPrioritesPicker(textField: UITextField) {
         let priorites = ["High","Medium","Low"]
-        let prioritesActionSheetStringPicker = ActionSheetStringPicker(title: "Choose priority", rows: priorites, initialSelection:0 , doneBlock: { [weak self]
+        weak var prioritesActionSheetStringPicker = ActionSheetStringPicker(title: "Choose priority", rows: priorites, initialSelection:0 , doneBlock: { [weak self]
             picker, values, indexes in
-            self?.selectedPriority = values
             self?.priorityTextField.text = indexes as! String?
             return
             }, cancel: { ActionMultipleStringCancelBlock in return }, origin: textField)
@@ -82,28 +85,41 @@ class AddMedicineViewController: UIViewController {
         
     }
     
+    // MARK: - @IBAction
+    
+    @IBAction func selectedDosageButton(_ sender: DLRadioButton) {
+        selectedDosageType = (sender.selected()?.titleLabel?.text)!
+        
+    }
+    
+    @IBAction func addMedicine(_ sender: Any) {
+        selectedDosage = "\(dosageTextField.text!) \(selectedDosageType!)"
+        presenter?.addMedicine(medicine: selectedMedicine, patient: patient!, time: selectedtime, dosage: selectedDosage, priority: priorityTextField.text)
+    }
+    
 }
+
+// MARK: -  UIPopoverPresentationControllerDelegate,MedicienPopOverViewControllerDelegate implementation
 
 extension AddMedicineViewController: UIPopoverPresentationControllerDelegate,MedicienPopOverViewControllerDelegate{
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
-        // return UIModalPresentationStyle.FullScreen
         return UIModalPresentationStyle.none
     }
     
-    // MARK: - ResellerTableViewControllerDelegate
-    
+    // MedicienPopOverViewControllerDelegate implementation
     func choosenMedicine(medicine: Medicine?){
         medicineTextField.text = medicine?.name
         selectedMedicine = medicine
-        
     }
     
 }
 
+// MARK: -  UITextFieldDelegate implementation
+
 extension AddMedicineViewController: UITextFieldDelegate{
     
-    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool{ // return NO to disallow editing.
+    public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool{
         
         if textField.tag == 1 {
             
@@ -126,6 +142,41 @@ extension AddMedicineViewController: UITextFieldDelegate{
         }else {
             return true
         }
+        
+    }
+    
+}
+
+// MARK: -  AddMedicineViewProtocol implementation
+
+extension AddMedicineViewController: AddMedicineViewProtocol{
+    
+    func successWith(msg: String){
+        
+        let alertController = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default) {
+            action in
+            self.navigationController?.popViewController(animated: true)
+            
+        }
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    func showErrorMsg(msg: String){
+        alert(message: msg)
+        
+    }
+    
+    func showProgressBar(){
+        progressView = self.showGlobalProgressHUDWithTitle(view: self.view, title: nil)
+        
+    }
+    
+    func hideProgressBar(){
+        self.progressView!.hide(animated: false)
+        self.progressView = nil
         
     }
     

@@ -12,6 +12,7 @@ import CoreData
 @objc(Patient)
 public class Patient: NSManagedObject {
     
+    //get patient list for certain nurse
     public class func getAllPatientsForNurse(email: String) -> [Patient]? {
         
         var patients = [Patient]()
@@ -30,7 +31,7 @@ public class Patient: NSManagedObject {
         return patients
     }
     
-    
+    // get certain patient with email
     public class func getPatientWith(email:String) -> Patient? {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext
@@ -39,7 +40,6 @@ public class Patient: NSManagedObject {
             let fetchRequest : NSFetchRequest<Patient> = Patient.fetchRequest()
             
             fetchRequest.predicate = NSPredicate(format: "email LIKE[cd] %@", email)
-            
             
             let fetchedResults = try managedObjectContext.fetch(fetchRequest)
             if fetchedResults.first != nil {
@@ -53,7 +53,7 @@ public class Patient: NSManagedObject {
     }
     
     
-    
+    // add new patient to nurse
     public class func addPatientWith(email:String, name: String, phone: String , nurseEmail: String) -> (Patient, Bool) {
         
         let managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext
